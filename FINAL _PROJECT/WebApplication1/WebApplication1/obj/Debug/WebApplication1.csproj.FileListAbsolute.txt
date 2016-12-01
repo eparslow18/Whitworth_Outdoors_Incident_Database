@@ -94,6 +94,5 @@
 \\cs1\2018\eparslow18\CS374-1\GitHub_DM\FinProGit\FINAL _PROJECT\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
 \\cs1\2018\eparslow18\CS374-1\GitHub_DM\FinProGit\FINAL _PROJECT\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
 \\cs1\2018\eparslow18\CS374-1\GitHub_DM\FinProGit\FINAL _PROJECT\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-\\cs1\2018\eparslow18\CS374-1\GitHub_DM\FinProGit\FINAL _PROJECT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
 \\cs1\2018\eparslow18\CS374-1\GitHub_DM\FinProGit\FINAL _PROJECT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
 \\cs1\2018\eparslow18\CS374-1\GitHub_DM\FinProGit\FINAL _PROJECT\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

@@ -94,7 +94,10 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\EditB.jpg" />
     <Content Include="Images\MainPage.jpg" />
+    <Content Include="Images\NewB.jpg" />
+    <Content Include="Images\SearchB.jpg" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
