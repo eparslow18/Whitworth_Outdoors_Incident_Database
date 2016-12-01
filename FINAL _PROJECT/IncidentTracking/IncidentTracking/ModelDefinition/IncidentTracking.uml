@@ -148,6 +148,17 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="1c99c3df-763b-4110-86c8-e7d853163c89"
+            name="Other"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -509,6 +520,28 @@
           <property
             Id="f9149d8e-ce03-4c86-a60d-dcd29c4e5f85"
             name="Van"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="0500cd12-eab3-42c9-b19a-ecf10e7a06ec"
+            name="Lost_Person"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e6a52e39-dffa-44c2-b084-2ff286bc49c2"
+            name="Other"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -1242,7 +1275,7 @@
     <packageHasNamedElement>
       <class
         Id="463e851a-203b-4a7f-a0c0-34be7e66430e"
-        name="Incident_Information"
+        name="Incident_Basic_Information"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1256,7 +1289,7 @@
             isAbstract="false">
             <classMoniker
               Id="1079c366-34d4-47db-9e00-58082b989dc0"
-              LastKnownName="Injured_Person_Personal_Info"
+              LastKnownName="Effected_Person_Personal_Info"
               LastKnownLocation="IncidentTracking.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -1608,39 +1641,6 @@
         </targetEnds>
         <ownedAttributesInternal>
           <property
-            Id="832714e2-3d6e-4ee0-9584-287235e05076"
-            name="Injured_Person_Whitworth_Id"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="5995eb5c-8e19-4895-afba-b5aa1a2e7ef2"
-            name="Trip_Leaders"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="918804b0-fcab-478f-b06a-7848232f254c"
-            name="Trip_Dates"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
             Id="ee70a0ec-722d-4ba5-b6ac-85352ff9d9c7"
             name="Time_of_Incident"
             isLeaf="false"
@@ -1907,7 +1907,7 @@
     <packageHasNamedElement>
       <class
         Id="1079c366-34d4-47db-9e00-58082b989dc0"
-        name="Injured_Person_Personal_Info"
+        name="Effected_Person_Personal_Info"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -1919,27 +1919,6 @@
             isStatic="false"
             isReadOnly="false"
             isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="21180688-678c-4143-ab34-e4aa9a281246"
-            name="DOB"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false" />
-          <property
-            Id="1a8fc279-468b-4024-98ab-d8c9ce1e9180"
-            name="Attribute1"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
             isDerived="false"
             isDerivedUnion="false"
             aggregation="None"
@@ -1977,19 +1956,22 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="509d5f4f-2f4a-495d-bad4-539ff600b32d"
+            name="WhitworthID"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="f61b8418-bb80-4a02-96a8-c985078972c8"
             name="Incident_ID"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-          <operation
-            Id="e7d27702-c52d-4095-abf7-53b860fe21d1"
-            name="Whitworth_ID"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -2051,7 +2033,7 @@
         <ownedAttributesInternal>
           <property
             Id="11074ebd-dc86-4c07-b75c-a12840acc9ca"
-            name="Hiking"
+            name="DayHike"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -2170,10 +2152,163 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="26f19389-9652-4554-a624-8b7c61b94f93"
+            name="Mountaineering"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d45e0dd2-574f-492d-a265-039c4e5147df"
+            name="MultiSport"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c4308c9a-904d-408d-be6e-12e8ff9d6ae2"
+            name="Other"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="2d0d30fa-e837-4d90-a623-e64191b930e3"
+            name="Incident_ID"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a4262b4b-cf47-43f4-ae9f-9ffcfc748214"
+        name="Trip_Basic_Information"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="364f03a1-e3f7-48aa-9a0c-6b01b9b7b809"
+            name="Trip_Name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a69e6331-fe9e-4abe-b4cf-854305969731"
+            name="Trip_End_Date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1dcf0234-3400-4c51-aba7-a3c00ad4509f"
+            name="Trip_Start_Date"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e5ed21f1-1eca-4f08-897f-900060855cd6"
+            name="Academic_Year"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="eed16498-09b3-418e-8769-52b68ed102ef"
+            name="Semester"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="8d8a0b9c-c664-44e4-8019-a474fa25b6b8"
+            name="Head_Lead"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e4e25e2d-4a02-4fa7-bdf3-d3daaa941b8e"
+            name="Co_Lead"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="616fe599-a24b-497e-83a7-90fdea971b87"
+            name="Apprentice"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="9f1c3b5f-a641-4b82-820d-8f903fe80052"
+            name="Additional_Leaders"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d361c76f-6467-4528-a017-9da6f2ba68a2"
             name="Incident_ID"
             isLeaf="false"
             isStatic="false"

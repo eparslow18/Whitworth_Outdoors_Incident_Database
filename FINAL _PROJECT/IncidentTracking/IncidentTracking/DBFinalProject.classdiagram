@@ -47,6 +47,9 @@
           <property Id="1d4c3a94-336e-475c-80cc-eedc630df80d" name="Cold_Enviornment" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="e0928ae9-7541-4376-b9bb-4ea2929180b1" />
           </property>
+          <property Id="5b366ffa-36a8-4ad9-965f-9f8b395222aa" name="Other" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1c99c3df-763b-4110-86c8-e7d853163c89" />
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="51b276a6-b675-4bb5-9f52-c07e0d98833e" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -198,6 +201,12 @@
           </property>
           <property Id="9f403408-b5b7-4d1f-8cfc-9fecfe96aa0b" name="Van" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="f9149d8e-ce03-4c86-a60d-dcd29c4e5f85" />
+          </property>
+          <property Id="a862037b-f3d3-4c51-8e43-434a0f29fd84" name="Lost_Person" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0500cd12-eab3-42c9-b19a-ecf10e7a06ec" />
+          </property>
+          <property Id="f946ebad-2721-4b4d-b5a1-e0f2c684ca1c" name="Other" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e6a52e39-dffa-44c2-b084-2ff286bc49c2" />
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
@@ -421,11 +430,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e6cd6b5c-19cb-40de-be73-3345ab6dc60e" name="Incident_Information" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="e6cd6b5c-19cb-40de-be73-3345ab6dc60e" name="Incident_Basic_Information" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="463e851a-203b-4a7f-a0c0-34be7e66430e" />
         <targetEnds>
           <association Id="4553f911-9952-47de-a083-7fad3fd5bb6c" isDerived="false" sourceEndRoleName="" targetEndRoleName="Injured_Person_Personal_Info" isLeaf="false" isAbstract="false">
-            <classMoniker Id="1f2afaf9-4d21-422c-ab7e-01cd54e2e03d" LastKnownName="Injured_Person_Personal_Info" />
+            <classMoniker Id="1f2afaf9-4d21-422c-ab7e-01cd54e2e03d" LastKnownName="Effected_Person_Personal_Info" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="c20aa315-b772-43d0-a86c-c77fa44b1245" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -608,15 +617,6 @@
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="208bc8b4-44aa-4bd2-9926-744f3e85c48b" name="Injured_Person_Whitworth_Id" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="832714e2-3d6e-4ee0-9584-287235e05076" />
-          </property>
-          <property Id="c5a97fb0-acdb-47a5-a580-7f1eff282393" name="Trip_Leaders" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="5995eb5c-8e19-4895-afba-b5aa1a2e7ef2" />
-          </property>
-          <property Id="8aa59ce3-caec-47ea-9b05-8b3e820c48c4" name="Trip_Dates" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="918804b0-fcab-478f-b06a-7848232f254c" />
-          </property>
           <property Id="04ced475-ffd2-4d50-92fb-c0eed7cfc5d1" name="Time_of_Incident" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ee70a0ec-722d-4ba5-b6ac-85352ff9d9c7" />
           </property>
@@ -707,17 +707,11 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="1f2afaf9-4d21-422c-ab7e-01cd54e2e03d" name="Injured_Person_Personal_Info" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="1f2afaf9-4d21-422c-ab7e-01cd54e2e03d" name="Effected_Person_Personal_Info" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1079c366-34d4-47db-9e00-58082b989dc0" />
         <ownedAttributesInternal>
           <property Id="f9ed861b-b690-4e18-8c8b-8d280a6290f5" name="First_Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="88754309-6cda-4e72-8f02-3feb7512b779" />
-          </property>
-          <property Id="3c3c92d7-d900-41f1-abc3-64634727283e" name="DOB" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="21180688-678c-4143-ab34-e4aa9a281246" />
-          </property>
-          <property Id="6f186032-365d-4d8a-9d48-31edeba36f2d" name="Attribute1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="1a8fc279-468b-4024-98ab-d8c9ce1e9180" />
           </property>
           <property Id="7de7e576-dfdb-480e-a436-20f8aacc626e" name="Last_Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ea39051f-ac8a-48ba-99ac-96107a8c78d6" />
@@ -728,13 +722,13 @@
           <property Id="f0b8b9bd-bd9d-4176-be41-60f0528360aa" name="Address" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1f1566ba-153b-43c7-b08b-d638ca506438" />
           </property>
+          <property Id="1ae840a9-f6a0-4f89-a542-effd07934206" name="WhitworthID" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="509d5f4f-2f4a-495d-bad4-539ff600b32d" />
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="a0227909-dd50-4ae9-8422-730bb00b974a" name="Incident_ID" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f61b8418-bb80-4a02-96a8-c985078972c8" />
-          </operation>
-          <operation Id="95f40857-ec38-40e1-a07f-52d2f6136b27" name="Whitworth_ID" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="e7d27702-c52d-4095-abf7-53b860fe21d1" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -761,7 +755,7 @@
       <class Id="93c26d12-87e0-4760-adeb-8ddd55a65fff" name="Type_Of_Trip" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="4b3c148b-ed8a-442d-b1b1-95d0466aa844" />
         <ownedAttributesInternal>
-          <property Id="9f70b2c0-75ec-4dbe-91d4-7aa7584b9202" name="Hiking" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="9f70b2c0-75ec-4dbe-91d4-7aa7584b9202" name="DayHike" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="11074ebd-dc86-4c07-b75c-a12840acc9ca" />
           </property>
           <property Id="87ded77f-e93c-4e55-b084-f789f0254996" name="Moutain_Biking" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
@@ -794,10 +788,58 @@
           <property Id="0d493624-f382-4fb5-bdbb-e2e3b334566a" name="Camping" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="cb71e39a-6f75-4695-a28f-0876aeaf828d" />
           </property>
+          <property Id="511a6151-8b57-430d-ab53-f8b3f7a99d57" name="Mountaineering" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="26f19389-9652-4554-a624-8b7c61b94f93" />
+          </property>
+          <property Id="26d80c9c-fb39-411b-8f92-925fed433605" name="MultiSport" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d45e0dd2-574f-492d-a265-039c4e5147df" />
+          </property>
+          <property Id="43efe9ef-88a2-4e9f-9268-0ca0f7600277" name="Other" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c4308c9a-904d-408d-be6e-12e8ff9d6ae2" />
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="519d8544-e81d-4f33-a9cd-515d4ade461b" name="Incident_ID" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="2d0d30fa-e837-4d90-a623-e64191b930e3" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="02ba25e3-a2d4-41cb-b5dc-e86be8c9e30c" name="Trip_Basic_Information" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a4262b4b-cf47-43f4-ae9f-9ffcfc748214" />
+        <ownedAttributesInternal>
+          <property Id="22f930fd-76c2-48b0-a5b3-c5ca1f5b84e4" name="Trip_Name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="364f03a1-e3f7-48aa-9a0c-6b01b9b7b809" />
+          </property>
+          <property Id="06fef0c9-5ebd-4f3b-9ed7-334cc8967407" name="Trip_End_Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a69e6331-fe9e-4abe-b4cf-854305969731" />
+          </property>
+          <property Id="b3f52844-2306-47a7-a02b-722203f86646" name="Trip_Start_Date" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1dcf0234-3400-4c51-aba7-a3c00ad4509f" />
+          </property>
+          <property Id="ca1c6272-23a7-48c8-94d5-ddb1b983ad11" name="Academic_Year" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e5ed21f1-1eca-4f08-897f-900060855cd6" />
+          </property>
+          <property Id="882ef142-a921-424d-b5ff-e853a4f4e912" name="Semester" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="eed16498-09b3-418e-8769-52b68ed102ef" />
+          </property>
+          <property Id="c127eaae-d5f0-438b-bd71-0aa4a6e0d625" name="Head_Lead" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8d8a0b9c-c664-44e4-8019-a474fa25b6b8" />
+          </property>
+          <property Id="a2985eb9-be42-4ae9-b2f0-62898da659c1" name="Co_Lead" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e4e25e2d-4a02-4fa7-bdf3-d3daaa941b8e" />
+          </property>
+          <property Id="e1a5ade0-15c4-4ca0-91c8-00c4334bc674" name="Apprentice" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="616fe599-a24b-497e-83a7-90fdea971b87" />
+          </property>
+          <property Id="0843b835-2f83-4213-a5dc-c3ef66923f3c" name="Additional_Leaders" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9f1c3b5f-a641-4b82-820d-8f903fe80052" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="3ee73c08-d627-49dd-825b-bfc26f053636" name="Incident_ID" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d361c76f-6467-4528-a017-9da6f2ba68a2" />
           </operation>
         </ownedOperationsInternal>
       </class>
