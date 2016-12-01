@@ -67,7 +67,7 @@
 
     <ul id="nav" style="align-self:center; font-size:115%">
         <!-- naming menu options and displaying in bar at bottom info------------------------------------------------------------------------------>
-        <li><a href="http//localhost:45082/Main.html; #newincident">Return to Main</a></li>
+        <li><a href="Main.html">Return to Main</a></li>
     </ul>
     <br />
 
@@ -75,11 +75,17 @@
     <h2 style="text-align:center; font-size:150%; font-family:Calibri;">Basic Information<br /></h2>
     <div  id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         Trip Name:<form><textarea cols="50" style="height:15px"></textarea></form>
-        Trip Start Date: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Trip End Date: <form><textarea cols="50" style="height:15px"></textarea></form>
+        Trip Start Date: <form><textarea cols="50"; placeholder="mm/dd/yyyy" style="height:15px "></textarea></form>
+        Trip End Date: <form><textarea cols="50" placeholder="mm/dd/yyyy" style="height:15px "></textarea></form>
+        Trip Academic Year: <form><textarea cols="50" placeholder="yyyy-yy" style="height:15px"></textarea></form>
+        Trip Semester:        
+        <label id="t1" style="font-size:100%"><input type="checkbox" name="fall" value="value">Fall</label>
+        <label id="t1" style="font-size:100%; margin-left:50px"><input type="checkbox" name="january" value="value">January</label>
+        <label style="font-size:100%; margin-left:50px"><input type="checkbox" name="spring" value="value">Spring</label><br /> <br />
         Head Lead: <form><textarea cols="50" style="height:15px"></textarea></form>
         Co-Lead: <form><textarea cols="50" style="height:15px"></textarea></form>
         Apprentice: <form><textarea cols="50" style="height:15px"></textarea></form>
+        Additional Leader(s):<form><textarea cols="50" style="height:15px"></textarea></form>
 
     </div>
 
@@ -107,7 +113,7 @@
 
             <label style="font-size:100%"><input type="checkbox" name="multisport" value="value">Multi-Sport</label><br />
         </p>
-        <form><textarea name"othertriptype" cols="50" style="height:15px; font-family:Calibri;">Other</textarea></form>
+        <form><textarea name"othertriptype" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>
 
         
     </div>
@@ -129,14 +135,15 @@
 
             <label style="font-size:100%"><input type="checkbox" name="snowice" value="value">Snow/ Ice</label><br />
         </p>
-        <form><textarea name"othersurface" cols="50" style="height:15px; font-family:Calibri;">Other</textarea></form>
+        <form><textarea name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>
     </div>
 
     <!-- INCIDENT BASIC INFO-------------------------------------------------------------------------------------------------------------------->
     <h4 style="text-align:center; font-size:150%; font-family:Calibri;">Incident Basic Information<br /></h4>
     <div  id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        Date of Incident: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Time of Incident: <form><textarea cols="50" style="height:15px"></textarea></form>
+        Date of Incident: <form><textarea cols="50" placeholder="mm/dd/yyyy" style="height:15px"></textarea></form>
+        Time of Incident: <form><textarea cols="50" placeholder="16:34 -Military Time" style="height:15px"></textarea></form>
+
         Person Reporting Incident: <form><textarea cols="50" style="height:15px"></textarea></form>
         Person First Reported To: <form><textarea cols="50" style="height:15px"></textarea></form>
         Description of Incident: (Please be thorough) <form><textarea cols="50" style="height:90px;"></textarea></form>
@@ -148,9 +155,9 @@
     <div  id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         First Name: <form><textarea cols="50" style="height:15px"></textarea></form>
         Last Name: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Date of Birth: <form><textarea cols="50" style="height:15px"></textarea></form>
+        Date of Birth: <form><textarea cols="50" placeholder="mm/dd/yyyy" style="height:15px"></textarea></form>
         Address:  <form><textarea cols="50" style="height:15px"></textarea></form>
-        Phone:  <form><textarea cols="50" style="height:15px"></textarea></form>
+        Phone:  <form><textarea cols="50" placeholder="000-111-2222" style="height:15px"></textarea></form>
         Whitworth ID: <form><textarea cols="50" style="height:15px"></textarea></form>
     </div>
 
@@ -210,7 +217,7 @@
             <label style="font-size:100%"><input type="checkbox" name="upperRespirtory" value="value">Upper Respiratory Illness</label>
             <label id="t1" style="font-size:100%; margin-left:80px"><input type="checkbox" name="urinarytract" value="value">Urinary Tract Infecion</label>
         </p>
-        <form><textarea name"othersurface" cols="50" style="height:15px; font-family:Calibri;">Other</textarea></form>
+        <form><textarea name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>
     </div>
 
 
@@ -240,7 +247,7 @@
 
             <label style="font-size:100%"><input type="checkbox" name="tendonitis" value="value">Tendonitis</label>
         </p>
-        <form><textarea name"othersurface" cols="50" style="height:15px; font-family:Calibri;">Other</textarea></form>
+        <form><textarea name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>
     </div>
 
     <!--WHITWORTH INCIDENT QUESTIONS------------------------------------------------------------------------------------------------------------------------->
