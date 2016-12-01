@@ -63,6 +63,12 @@
         p {
         font-weight: 600;
         }
+
+        .a {
+             display: inline-block; width: 100px;
+
+        }
+
     </style>
 
     <ul id="nav" style="align-self:center; font-size:115%">
@@ -91,13 +97,13 @@
 
 
 
-    <!--TRIP SURFACE CONDITION------------------------------------------------------------------------------------------------------------------>
+    <!--TRIP TYPE------------------------------------------------------------------------------------------------------------------>
     <h2 style="text-align:center; font-size:150%; font-family:Calibri;">Trip Type<br /></h2>
-    <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
+    <div style="text-align:; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         <p id="p">
-            <label style="font-size:100%"><input type="checkbox" name="dayhike" value="value">Day Hike</label>
-            <label id="t1" style="font-size:100%; margin-left:100px"><input type="checkbox" name="backpacking" value="value">Backpacking</label>
-            <label id="t1" style="font-size:100%; margin-left:200px"><input type="checkbox" name="climbing" value="value">Climbing</label><br />
+            <label style="font-size:100%"><input type="checkbox" name="dayhike" value="value"  >Day Hike</label>
+            <label style="font-size:100%"><input type="checkbox" name="backpacking" value="value">Backpacking</label>
+            <label id="t1" style="font-size:100%;"><input type="checkbox" name="climbing" value="value">Climbing</label><br />
 
             <label id="t1" style="font-size:100%"><input type="checkbox" name="snowshoeing" value="value">Snowshoeing</label>
             <label id="t1" style="font-size:100%; margin-left:75px"><input type="checkbox" name="mountainbiking" value="value">Mountain Biking</label>
@@ -113,25 +119,45 @@
 
             <label style="font-size:100%"><input type="checkbox" name="multisport" value="value">Multi-Sport</label><br />
         </p>
-        <form><textarea name"othertriptype" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>
-
-        
+        <form><textarea name"othertriptype" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>        
     </div>
-    <!--TRIP SURFACE CONDITION------------------------------------------------------------------------------------------------------>
-    <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Trip Surface Condition<br /></h3>
+
+    <!--TYPE OF ENVIORNMENT------------------------------------------------------------------------------------------------------>
+    <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Type Of Enviornment<br /></h3>
     <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         <p id="p">
             <label style="font-size:100%"><input type="checkbox" name="desert" value="value">Desert</label>
-            <label id="t1" style="font-size:100%; margin-left:100px"><input type="checkbox" name="cliff" value="value">CLiff</label>
-            <label id="t1" style="font-size:100%; margin-left:200px"><input type="checkbox" name="Cold" value="value">Cold</label><br />
+            <label id="t1" style="font-size:100%; margin-left:100px; padding-left:"><input type="checkbox" name="cliff" value="value">Cliff</label>
+            <label id="t1" style="font-size:100%; margin-left:100px; padding-left:200px"><input type="checkbox" name="Cold" value="value">Cold</label><br />
 
             <label id="t1" style="font-size:100%"><input type="checkbox" name="forest" value="value">Forest</label>
-            <label id="t1" style="font-size:100%; margin-left:75px"><input type="checkbox" name="glacier" value="value">Glacier</label>
-            <label style="font-size:100%; margin-left:175px"><input type="checkbox" name="Lake" value="value">Lake</label><br />
+            <label id="t1" style="font-size:100%; margin-left:100px; padding-left:200px"><input type="checkbox" name="glacier" value="value">Glacier</label>
+            <label style="font-size:100%; margin-left:100px; padding-left:200px"><input type="checkbox" name="Lake" value="value">Lake</label><br />
 
             <label style="font-size:100%"><input type="checkbox" name="Mountain" value="value">Mountain</label>
             <label style="font-size:100%; margin-left:100px"><input type="checkbox" name="ocean" value="value">Ocean</label>
             <label style="font-size:100%; margin-left:200px"><input type="checkbox" name="river" value="value">River</label><br />
+
+            <label style="font-size:100%"><input type="checkbox" name="snowice" value="value">Snow/ Ice</label><br />
+        </p>
+        <form><textarea name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>
+    </div>
+
+    <!--SURFACE CONDITION------------------------------------------------------------------------------------------------------>
+    <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Surface Condition<br /></h3>
+    <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
+        <p id="p">
+            <label style="font-size:100%"><input type="checkbox" name="dry" value="value">Dry</label>
+            <label id="t1" style="font-size:100%; margin-left:100px"><input type="checkbox" name="flat" value="value">Flat</label>
+            <label id="t1" style="font-size:100%; margin-left:200px"><input type="checkbox" name="ice" value="value">Ice</label><br />
+
+            <label id="t1" style="font-size:100%"><input type="checkbox" name="rock" value="value">Rock</label>
+            <label id="t1" style="font-size:100%; margin-left:75px"><input type="checkbox" name="sloped" value="value">Sloped</label>
+            <label style="font-size:100%; margin-left:175px"><input type="checkbox" name="Snow" value="value">Snow</label><br />
+
+            <label style="font-size:100%"><input type="checkbox" name="trail" value="value">Trail</label>
+            <label style="font-size:100%; margin-left:100px"><input type="checkbox" name="unevn" value="value">Uneven</label>
+            <label style="font-size:100%; margin-left:200px"><input type="checkbox" name="wet" value="value">Wet</label><br />
 
             <label style="font-size:100%"><input type="checkbox" name="snowice" value="value">Snow/ Ice</label><br />
         </p>
