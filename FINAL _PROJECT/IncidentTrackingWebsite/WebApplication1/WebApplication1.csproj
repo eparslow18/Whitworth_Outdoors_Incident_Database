@@ -98,6 +98,8 @@
     <Content Include="Images\MainPage.jpg" />
     <Content Include="Images\NewB.jpg" />
     <Content Include="Images\SearchB.jpg" />
+    <Content Include="JavaScript\NewIncident.js" />
+    <Content Include="CSS\StyleSheet.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

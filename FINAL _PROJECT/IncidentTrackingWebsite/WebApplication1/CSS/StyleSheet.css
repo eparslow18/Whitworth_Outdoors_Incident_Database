@@ -1,0 +1,59 @@
+﻿  body {
+            background-image: url('http://www.outdoorchanneloutfitters.com/wp-content/uploads/2014/10/camping-outdoors.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: transparent;
+            text-align: center;
+        }
+
+        li {
+            float: right; /*use float to get the menu options to slide next to eachother*/
+        }
+
+            li a { /*creating menu*/
+                display: block;
+                color: lightgrey;
+                text-align: center;
+                padding: 20px 24px;
+                text-decoration: none;
+                width: 200px;
+            }
+
+                li a:hover { /* creating a hover stop differnetiate which menu option the mouse is over*/
+                    background-color: #111;
+                }
+
+        div {
+            background-color: rgba(6,4,2,0.1);
+            width: 850px;
+            height: 100%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 15px;
+        }
+
+        #t1 {
+            tab-size: 5;
+        }
+
+        .divider {
+            width: 5px;
+            height: auto;
+            display: inline-block;
+        }
+
+        p {
+        font-weight: 600;
+        }
+
+        .a {
+             display: inline-block; width: 100px;
+
+        }
