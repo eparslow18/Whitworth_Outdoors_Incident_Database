@@ -1,4 +1,5 @@
-﻿function submitOnClick()
+﻿
+function submitOnClick()
 {
-
+    $.ajax
 }

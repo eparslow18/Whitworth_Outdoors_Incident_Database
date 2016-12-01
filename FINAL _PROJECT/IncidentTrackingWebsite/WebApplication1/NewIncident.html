@@ -2,14 +2,16 @@
 <html>
 <head>
     <title>Documenting New Incident</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <link rel="stylesheet" type="text/css" href="CSS/StyleSheet.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="JavaScript/NewIncident.js"></script>
 </head>
 <body style="background-image: url(Images/NewB.jpg); background-repeat: no-repeat; background-position-x: center; background-position-y:unset; font-family:Calibri">
     <h1 style="text-align:center; font-size:300%; font-family:Calibri; text-decoration:underline"><br />  DOCUMENT A NEW INCIDENT </h1>
 
     <!-- CSS Styling below------------------------------------------------------------------------------------------------------------------------------>
-  
+
     <ul id="nav" style="align-self:center; font-size:115%">
         <!-- naming menu options and displaying in bar at bottom info------------------------------------------------------------------------------>
         <li><a href="Main.html">Return to Main</a></li>
@@ -18,19 +20,21 @@
 
     <!--TRIP BASIC INFO------------------------------------------------------------------------------------------------------------------------->
     <h2 style="text-align:center; font-size:150%; font-family:Calibri;">Trip Basic Information<br /></h2>
-    <div  id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        Trip Name:<form><textarea cols="50" style="height:15px"></textarea></form>
-        Trip Start Date: <form><textarea cols="50"; placeholder="mm/dd/yyyy" style="height:15px "></textarea></form>
-        Trip End Date: <form><textarea cols="50" placeholder="mm/dd/yyyy" style="height:15px "></textarea></form>
-        Trip Academic Year: <form><textarea cols="50" placeholder="yyyy-yy" style="height:15px"></textarea></form>
-        Trip Semester:        
-        <label id="t1" style="font-size:100%"><input type="checkbox" name="fall" value="value">Fall</label>
-        <label id="t1" style="font-size:100%; margin-left:50px"><input type="checkbox" name="january" value="value">January</label>
-        <label style="font-size:100%; margin-left:50px"><input type="checkbox" name="spring" value="value">Spring</label><br /> <br />
-        Head Lead: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Co-Lead: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Apprentice: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Additional Leader(s):<form><textarea cols="50" style="height:15px"></textarea></form>
+    <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
+        Trip Name:<form><textarea cols="50" style="height:15px" maxlength="50" required></textarea></form>
+        Trip Start Date: <form><textarea oninvalid="alert('Input Trip Start Date')" cols="50" ; placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea></form>
+        Trip End Date: <form><textarea cols="50" placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea></form>
+        Trip Academic Year: <form><textarea cols="50" placeholder="yyyy-yy" style="height:15px" maxlength="7" required></textarea></form>
+        Trip Semester:
+        <form>
+            <label id="t1" style="font-size:100%"><input type="radio" name="semester" required>Fall</label>
+            <label id="t1" style="font-size:100%; margin-left:50px"><input type="radio" name="semester">January</label>
+            <label style="font-size:100%; margin-left:50px"><input type="radio" name="semester">Spring</label><br /> <br />
+        </form>
+        Head Lead: <form><textarea cols="50" style="height:15px" maxlength="100" required></textarea></form>
+        Co-Lead: <form><textarea cols="50" style="height:15px" maxlength="100" required></textarea></form>
+        Apprentice: <form><textarea cols="50" style="height:15px" maxlength="100" required></textarea></form>
+        Additional Leader(s):<form><textarea cols="50" style="height:15px" maxlength="150" required></textarea></form>
 
     </div>
 
@@ -40,7 +44,7 @@
     <h2 style="text-align:center; font-size:150%; font-family:Calibri;">Trip Type<br /></h2>
     <div style="text-align:; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         <p id="p">
-            <label style="font-size:100%"><input type="checkbox" name="dayhike" value="value"  >Day Hike</label>
+            <label style="font-size:100%"><input type="checkbox" name="dayhike" value="value">Day Hike</label>
             <label style="font-size:100%"><input type="checkbox" name="backpacking" value="value">Backpacking</label>
             <label id="t1" style="font-size:100%;"><input type="checkbox" name="climbing" value="value">Climbing</label><br />
 
@@ -58,7 +62,7 @@
 
             <label style="font-size:100%"><input type="checkbox" name="multisport" value="value">Multi-Sport</label><br />
         </p>
-        <form><textarea name"othertriptype" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>        
+        <form><textarea name"othertriptype" cols="50" placeholder="Other" style="height:15px; font-family:Calibri" maxlength="100"></textarea></form>
     </div>
 
     <!--TYPE OF ENVIORNMENT------------------------------------------------------------------------------------------------------>
@@ -79,7 +83,7 @@
 
             <label style="font-size:100%"><input type="checkbox" name="snowice" value="value">Snow/ Ice</label><br />
         </p>
-        <form><textarea name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>
+        <form><textarea name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;" maxlength="100"></textarea></form>
     </div>
 
     <!--SURFACE CONDITION------------------------------------------------------------------------------------------------------>
@@ -100,36 +104,36 @@
 
             <label style="font-size:100%"><input type="checkbox" name="snowice" value="value">Snow/ Ice</label><br />
         </p>
-        <form><textarea name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>
+        <form><textarea name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;" maxlength="100"></textarea></form>
     </div>
 
     <!-- INCIDENT BASIC INFO-------------------------------------------------------------------------------------------------------------------->
     <h4 style="text-align:center; font-size:150%; font-family:Calibri;">Incident Basic Information<br /></h4>
-    <div  id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        Date of Incident: <form><textarea cols="50" placeholder="mm/dd/yyyy" style="height:15px"></textarea></form>
-        Time of Incident: <form><textarea cols="50" placeholder="16:34 -Military Time" style="height:15px"></textarea></form>
+    <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
+        Date of Incident: <form><textarea cols="50" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10" required></textarea></form>
+        Time of Incident: <form><textarea cols="50" placeholder="16:34 -Military Time" style="height:15px" maxlength="10" required></textarea></form>
 
-        Person Reporting Incident: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Person First Reported To: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Description of Incident: (Please be thorough) <form><textarea cols="50" style="height:90px;"></textarea></form>
-        Response Actions Taken: (Please be thorough) <form><textarea cols="50" style="height:90px;"></textarea></form>
+        Person Reporting Incident: <form><textarea cols="50" style="height:15px" maxlength="100" required></textarea></form>
+        Person First Reported To: <form><textarea cols="50" style="height:15px" maxlength="100" required></textarea></form>
+        Description of Incident: (Please be thorough) <form><textarea cols="50" style="height:90px;" maxlength="1500" required></textarea></form>
+        Response Actions Taken: (Please be thorough) <form><textarea cols="50" style="height:90px;" maxlength="1500" required></textarea></form>
     </div>
 
     <!--Effected Person Information---------------------------------------------------------------------------------------------------->
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Effected Person Personal Information<br /></h3>
-    <div  id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        First Name: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Last Name: <form><textarea cols="50" style="height:15px"></textarea></form>
-        Date of Birth: <form><textarea cols="50" placeholder="mm/dd/yyyy" style="height:15px"></textarea></form>
-        Address:  <form><textarea cols="50" style="height:15px"></textarea></form>
-        Phone:  <form><textarea cols="50" placeholder="000-111-2222" style="height:15px"></textarea></form>
-        Whitworth ID: <form><textarea cols="50" style="height:15px"></textarea></form>
+    <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
+        First Name: <form><textarea cols="50" style="height:15px" maxlength="50"></textarea></form>
+        Last Name: <form><textarea cols="50" style="height:15px" maxlength="50"></textarea></form>
+        Date of Birth: <form><textarea cols="50" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10"></textarea></form>
+        Address:  <form><textarea cols="50" style="height:15px" maxlength="200"></textarea></form>
+        Phone:  <form><textarea cols="50" placeholder="000-111-2222" style="height:15px" maxlength="12"></textarea></form>
+        Whitworth ID: <form><textarea cols="50" style="height:15px" maxlength="8"></textarea></form>
     </div>
 
     <!--Type of Incident------------------------------------------------------------------------------------------------------------->
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Type of Incident<br /></h3>
     <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        <p  id="p">
+        <p id="p">
             <label style="font-size:100%"><input type="checkbox" name="death" value="value">Death</label>
             <label id="t1" style="font-size:100%; margin-left:200px"><input type="checkbox" name="illness" value="value">Illness</label>
             <label id="t1" style="font-size:100%; margin-left:200px"><input type="checkbox" name="Injury" value="value">Injury</label><br />
@@ -141,7 +145,7 @@
             <label style="font-size:100%"><input type="checkbox" name="lostPerson" value="value">Lost Person</label>
         </p>
         <form><textarea name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea></form>
-        </div>
+    </div>
 
     <!--Severity of Incident---------------------------------------------------------------------------------------------------------->
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Severity of Incident<br /></h3>
@@ -223,23 +227,22 @@
     <!--WHITWORTH INCIDENT QUESTIONS------------------------------------------------------------------------------------------------------------------------->
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Whitworth Incident Questions<br /></h3>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        Were person’s actions at time of injury/incident for the purpose of Whitworth business? If NO, please explain: <form><textarea cols="50" style="height:40px; width:100%"></textarea></form>
-        Was any person not employed by Whitworth to blame for this injury/incident? If YES, please provide name and address of such person below. <form><textarea cols="50" style="height:40px; width:100%"></textarea></form>
-        Are you aware of any previous pain or disability in the area of the present injury? If YES, please explain: <form><textarea cols="50" style="height:40px; width:100%"></textarea></form>
-        Are you aware of any pre-existing injury or disability of the worker prior to injury? If YES, please explain: <form><textarea cols="50" style="height:40px; width:100%"></textarea></form>
-        What was the basic cause (and contributory cause(s) if any) Please explain fully any unsafe act, condition or personal factor: <form><textarea cols="50" style="height:40px; width:100%"></textarea></form>
-        Name and occupations of persons who investigated accident: <form><textarea cols="50" style="height:40px; width:100%"></textarea></form>
+        Were person’s actions at time of injury/incident for the purpose of Whitworth business? If NO, please explain: <form><textarea cols="50" style="height:40px; width:100%" maxlength="1000" required></textarea></form>
+        Was any person not employed by Whitworth to blame for this injury/incident? If YES, please provide name and address of such person below. <form><textarea cols="50" style="height:40px; width:100%" maxlength="1000" required></textarea></form>
+        Are you aware of any previous pain or disability in the area of the present injury? If YES, please explain: <form><textarea cols="50" style="height:40px; width:100%" maxlength="1000" required></textarea></form>
+        Are you aware of any pre-existing injury or disability of the worker prior to injury? If YES, please explain: <form><textarea cols="50" style="height:40px; width:100%" maxlength="1000" required></textarea></form>
+        What was the basic cause (and contributory cause(s) if any) Please explain fully any unsafe act, condition or personal factor: <form><textarea cols="50" style="height:40px; width:100%" maxlength="1000" required></textarea></form>
+        Name and occupations of persons who investigated accident: <form><textarea cols="50" style="height:40px; width:100%" required></textarea></form>
     </div>
 
 
-            <br /><br /><br />
+    <br /><br /><br />
     <div id="p" style="text-align:center; font-size:100%; font-family:Calibri; align-content:center; font-weight:600; padding: 10px 20px; border: grey 2px solid; width:800px">
-        <label style="font-size:100%"><input type="checkbox" name="submitting" value="value">I assert that all of this information is true to my knowledge.</label>
+        <label style="font-size:100%"><input type="checkbox" name="submitting" value="value" required>I assert that all of this information is true to my knowledge.</label>
         <br /><br />
-        <button>Submit</button>
-        </div>
+        <button onclick="submitOnClick()" type="submit" value="Submit">Submit</button>
+    </div>
 
-
-        <br /><br /><br /><br />
+    <br /><br /><br /><br />
 </body>
 </html>
