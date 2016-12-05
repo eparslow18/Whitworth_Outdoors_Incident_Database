@@ -74,132 +74,237 @@ function setTripType(TripType)
    
 }
 
-function post()
-{
+function SubmitButton() {
+
     // Trip Type
-    var TripName = $('#TripName').val();
-    var TripStartDate = $('#TripStartDate').val();
-    var TripStartEndDate = $('#TripStartEndDate').val();
-    var AcademicYear = $('#AcademicYear').val();
-    var Semester = setSemester(Semester);
-    var HeadLead = $('#HeadLead').val();
-    var CoLead = $('#CoLead').val();
-    var Apprentice = $('#Apprentice').val();
-    var AdditionalLeaders = $('#AdditionalLeaders').val();
-    var TripType = setTripType(TripType);
+    var vTripName = $('#TripName').val();
+    var vTripStartDate = $('#TripStartDate').val();
+    var vTripStartEndDate = $('#TripStartEndDate').val();
+    var vAcademicYear = $('#AcademicYear').val();
+    var vSemester = setSemester(vSemester);
+    var vHeadLead = $('#HeadLead').val();
+    var vCoLead = $('#CoLead').val();
+    var vApprentice = $('#Apprentice').val();
+    var vAdditionalLeaders = $('#AdditionalLeaders').val();
+    var vTripType = setTripType(vTripType);
 
     // Type Of Enviorment
-    var Desert = $('#Desert').val();
-    var Cliff = $('#Cliff').val();
-    var Cold = $('#Cold').val();
-    var Forest = $('#Forest').val();
-    var Glacier = $('#Glacier').val();
-    var Lake = $('#Lake').val();
-    var Mountain = $('#Mountain').val();
-    var Ocean = $('#Ocean').val();
-    var River = $('#River').val();
-    var SnowIce = $('#SnowIce').val();
-    var OtherEnviorment = $('#OtherEnviorment').val();
+    var vDesert = $('#Desert').val();
+    var vCliff = $('#Cliff').val();
+    var vCold = $('#Cold').val();
+    var vForest = $('#Forest').val();
+    var vGlacier = $('#Glacier').val();
+    var vLake = $('#Lake').val();
+    var vMountain = $('#Mountain').val();
+    var vOcean = $('#Ocean').val();
+    var vRiver = $('#River').val();
+    var vSnowIce = $('#SnowIce').val();
+    var vOtherEnviorment = $('#OtherEnviorment').val();
 
     // Surface Condition
-    var Dry = $('#Dry').val();
-    var Flat = $('#Flat').val();
-    var Ice = $('#Ice').val();
-    var Rock = $('#Rock').val();
-    var Sloped = $('#Sloped').val();
-    var Snow = $('#Snow').val();
-    var Trail = $('#Trail').val();
-    var Uneven = $('#Uneven').val();
-    var Wet = $('#Wet').val();
-    var SnowAndIce = $('#SnowAndIce').val();
-    var OtherSurfaceCondition = $('#OtherSurfaceCondition').val();
+    var vDry = $('#Dry').val();
+    var vFlat = $('#Flat').val();
+    var vIce = $('#Ice').val();
+    var vRock = $('#Rock').val();
+    var vSloped = $('#Sloped').val();
+    var vSnow = $('#Snow').val();
+    var vTrail = $('#Trail').val();
+    var vUneven = $('#Uneven').val();
+    var vWet = $('#Wet').val();
+    var vSnowAndIce = $('#SnowAndIce').val();
+    var vOtherSurfaceCondition = $('#OtherSurfaceCondition').val();
 
     // Incident Basic Information
-    var DateOfIncident = $('#DateOfIncident').val();
-    var TimeOfIncident = $('#TimeOfIncident').val();
-    var PersonReportingIncident = $('#PersonReportingIncident').val();
-    var PersonReportedTo = $('#PersonReportedTo').val();
-    var DescriptionOfIncident = $('#DescriptionOfIncident').val();
-    var ResponseActionsTaken = $('#ResponseActionsTaken').val();
+    var vDateOfIncident = $('#DateOfIncident').val();
+    var vTimeOfIncident = $('#TimeOfIncident').val();
+    var vPersonReportingIncident = $('#PersonReportingIncident').val();
+    var vPersonReportedTo = $('#PersonReportedTo').val();
+    var vDescriptionOfIncident = $('#DescriptionOfIncident').val();
+    var vResponseActionsTaken = $('#ResponseActionsTaken').val();
 
     // Affected Person Information
-    var FirstName = $('#FirstName').val();
-    var LastName = $('#LastName').val();
-    var DOB = $('#DOB').val();
-    var Address = $('#Address').val();
-    var Phone = $('#Phone').val();
-    var WhitowrthID = $('#WhitowrthID').val();
+    var vFirstName = $('#FirstName').val();
+    var vLastName = $('#LastName').val();
+    var vDOB = $('#DOB').val();
+    var vAddress = $('#Address').val();
+    var vPhone = $('#Phone').val();
+    var vWhitowrthID = $('#WhitowrthID').val();
 
     // Type Of Incident
-    var Death = $('#Death').val();
-    var Illness = $('#Illness').val();
-    var Injury = $('#Injury').val();
-    var MotivationBehavioral = $('#MotivationBehavioral').val();
-    var NearMiss = $('#NearMiss').val();
-    var Van = $('#Van').val();
-    var LostPerson = $('#LostPerson').val();
-    var OtherTypeOfIncident = $('#OtherTypeOfIncident').val();
+    var vDeath = $('#Death').val();
+    var vIllness = $('#Illness').val();
+    var vInjury = $('#Injury').val();
+    var vMotivationBehavioral = $('#MotivationBehavioral').val();
+    var vNearMiss = $('#NearMiss').val();
+    var vVan = $('#Van').val();
+    var vLostPerson = $('#LostPerson').val();
+    var vOtherTypeOfIncident = $('#OtherTypeOfIncident').val();
 
     // Severity Of Incident
-    var Disabling = $('#Disabling').val();
-    var Fatal = $('#Fatal').val();
-    var Fire = $('#Fire').val();
-    var FirstAidOnly = $('#FirstAidOnly').val();
-    var MedialTreatment = $('#MedialTreatment').val();
-    var NoInjury = $('#NoInjury').val();
-    var PropertyDamage = $('#PropertyDamage').val();
-    var OtherSeverity = $('#OtherSeverity').val();
+    var vDisabling = $('#Disabling').val();
+    var vFatal = $('#Fatal').val();
+    var vFire = $('#Fire').val();
+    var vFirstAidOnly = $('#FirstAidOnly').val();
+    var vMedialTreatment = $('#MedialTreatment').val();
+    var vNoInjury = $('#NoInjury').val();
+    var vPropertyDamage = $('#PropertyDamage').val();
+    var vOtherSeverity = $('#OtherSeverity').val();
 
     // Type Of Illness
-    var AbdominalPain = $('#AbdominalPain').val();
-    var AllergicReaction = $('#AllergicReaction').val();
-    var AltitudeSickness = $('#AltitudeSickness').val();
-    var Dehydration = $('#Dehydration').val();
-    var Diarrhea = $('#Diarrhea').val();
-    var EarInfection = $('#EarInfection').val();
-    var EyeInfection = $('#EyeInfection').val();
-    var FluCold = $('#FluCold').val();
-    var FoodIllness = $('#FoodIllness').val();
-    var HeatIllness = $('#HeatIllness').val();
-    var Hyothermia = $('#Hyothermia').val();
-    var NauseaVomitting = $('#NauseaVomitting').val();
-    var Fever = $('#Fever').val();
-    var SkinInfection = $('#SkinInfection').val();
-    var UpperRespiratory = $('#UpperRespiratory').val();
-    var UrinaryTract = $('#UrinaryTract').val();
-    var Asthma = $('#Asthma').val();
-    var OtherIllness = $('#OtherIllness').val();
+    var vAbdominalPain = $('#AbdominalPain').val();
+    var vAllergicReaction = $('#AllergicReaction').val();
+    var vAltitudeSickness = $('#AltitudeSickness').val();
+    var vDehydration = $('#Dehydration').val();
+    var vDiarrhea = $('#Diarrhea').val();
+    var vEarInfection = $('#EarInfection').val();
+    var vEyeInfection = $('#EyeInfection').val();
+    var vFluCold = $('#FluCold').val();
+    var vFoodIllness = $('#FoodIllness').val();
+    var vHeatIllness = $('#HeatIllness').val();
+    var vHyothermia = $('#Hyothermia').val();
+    var vNauseaVomitting = $('#NauseaVomitting').val();
+    var vFever = $('#Fever').val();
+    var vSkinInfection = $('#SkinInfection').val();
+    var vUpperRespiratory = $('#UpperRespiratory').val();
+    var vUrinaryTract = $('#UrinaryTract').val();
+    var vAsthma = $('#Asthma').val();
+    var vOtherIllness = $('#OtherIllness').val();
 
     // Type Of Illness 
-    var Blister = $('#Blister').val();
-    var Burn = $('#Burn').val();
-    var Dental = $('#Dental').val();
-    var Dislocation = $('#Dislocation').val();
-    var EyeInjury = $('#EyeInjury').val();
-    var Fracture = $('#Fracture').val();
-    var Frostbite = $('#Frostbite').val();
-    var HeadWOLOC = $('#HeadWOLOC').val();
-    var HeadWLOC = $('#HeadWLOC').val();
-    var ImmersionFood = $('#ImmersionFood').val();
-    var LigamentsSprain = $('#LigamentsSprain').val();
-    var MuscleStrain = $('#MuscleStrain').val();
-    var NearDrowning = $('#NearDrowning').val();
-    var SoftTissue = $('#SoftTissue').val();
-    var SunBurn = $('#SunBurn').val();
-    var Tendonitis = $('#Tendonitis').val();
-    var OtherInury = $('#OtherInury').val();
+    var vBlister = $('#Blister').val();
+    var vBurn = $('#Burn').val();
+    var vDental = $('#Dental').val();
+    var vDislocation = $('#Dislocation').val();
+    var vEyeInjury = $('#EyeInjury').val();
+    var vFracture = $('#Fracture').val();
+    var vFrostbite = $('#Frostbite').val();
+    var vHeadWOLOC = $('#HeadWOLOC').val();
+    var vHeadWLOC = $('#HeadWLOC').val();
+    var vImmersionFood = $('#ImmersionFood').val();
+    var vLigamentsSprain = $('#LigamentsSprain').val();
+    var vMuscleStrain = $('#MuscleStrain').val();
+    var vNearDrowning = $('#NearDrowning').val();
+    var vSoftTissue = $('#SoftTissue').val();
+    var vSunBurn = $('#SunBurn').val();
+    var vTendonitis = $('#Tendonitis').val();
+    var vOtherInury = $('#OtherInury').val();
 
     // Questions
-    var Q1 = $('#Question1').val();
-    var Q2 = $('#Question2').val();
-    var Q3 = $('#Question3').val();
-    var Q4 = $('#Question4').val();
-    var Q5 = $('#Question5').val();
-    var Q6 = $('#Question6').val();
+    var vQ1 = $('#Question1').val();
+    var vQ2 = $('#Question2').val();
+    var vQ3 = $('#Question3').val();
+    var vQ4 = $('#Question4').val();
+    var vQ5 = $('#Question5').val();
+    var vQ6 = $('#Question6').val();
 
     //post to php
 
-    //redirect to ?
-
-
+    $.post("file://cs1/CS_Projects/2016_Fall_CS374/WOIncidentTracking/public_html/PHP_Files/New_Entry.php",
+                        {
+                            TripName: vTripName,
+                            TripStartDate: vTripStartDate,
+                            TripStartEndDate: vTripStartEndDate,
+                            AcademicYear: vAcademicYear,
+                            Semester: vSemester,
+                            HeadLead: vHeadLead,
+                            CoLead: vCoLead,
+                            Apprentice: vApprentice,
+                            AdditionalLeaders: vAdditionalLeaders,
+                            TripType: vTripType,
+                            Desert: vDesert,
+                            Cliff: vCliff,
+                            Cold: vCold,
+                            Forest: vForest,
+                            Glacier: vGlacier,
+                            Lake: vLake,
+                            Mountain: vMountain,
+                            Ocean: vOcean,
+                            River: vRiver,
+                            SnowIce: vSnowIce,
+                            OtherEnviorment: vOtherEnviorment,
+                            Dry: vDry,
+                            Flat: vFlat,
+                            Ice: vIce,
+                            Rock: vRock,
+                            Sloped: vSloped,
+                            Snow: vSnow,
+                            Trail: vTrail,
+                            Uneven: vUneven,
+                            Wet: vWet,
+                            SnowAndIce: vSnowAndIce,
+                            OtherSurfaceCondition: vOtherSurfaceCondition,
+                            DateOfIncident: vDateOfIncident,
+                            TimeOfIncident: vTimeOfIncident,
+                            PersonReportingIncident: vPersonReportingIncident,
+                            PersonReportedTo: vPersonReportedTo,
+                            DescriptionOfIncident: vDescriptionOfIncident,
+                            ResponseActionsTaken: vResponseActionsTaken,
+                            FirstName: vFirstName,
+                            LastName: vLastName,
+                            DOB: vDOB,
+                            Address: vAddress,
+                            Phone: vPhone,
+                            WhitowrthID: vWhitowrthID,
+                            Death: vDeath,
+                            llness: vIllness,
+                            Injury: vInjury,
+                            MotivationBehavioral: vMotivationBehavioral,
+                            NearMiss: vNearMiss,
+                            Van: vVan,
+                            LostPerson: vLostPerson,
+                            OtherTypeOfIncident: vOtherTypeOfIncident,
+                            Disabling: vDisabling,
+                            Fatal: vFatal,
+                            Fire: vFire,
+                            FirstAidOnly: vFirstAidOnly,
+                            MedialTreatment: vMedialTreatment,
+                            NoInjury: vNoInjury,
+                            PropertyDamage: vPropertyDamage,
+                            OtherSeverity: vOtherSeverity,
+                            AbdominalPain: vAbdominalPain,
+                            AllergicReaction: vAllergicReaction,
+                            AltitudeSickness: vAltitudeSickness,
+                            Dehydration: vDehydration,
+                            Diarrhea: vDiarrhea,
+                            EarInfection: vEarInfection,
+                            EyeInfection: vEyeInfection,
+                            FluCold: vFluCold,
+                            FoodIllness: vFoodIllness,
+                            HeatIllness: vHeatIllness,
+                            Hyothermia: vHyothermia,
+                            NauseaVomitting: vNauseaVomitting,
+                            Fever: vFever,
+                            SkinInfection: vSkinInfection,
+                            UpperRespiratory: vUpperRespiratory,
+                            UrinaryTract: vUrinaryTract,
+                            Asthma: vAsthma,
+                            OtherIllness: vOtherIllness,
+                            Blister: vBlister,
+                            Burn: vBurn,
+                            Dental: vDental,
+                            Dislocation: vDislocation,
+                            EyeInjury: vEyeInjury,
+                            Fracture: vFracture,
+                            Frostbite: vFrostbite,
+                            HeadWLOC: vHeadWLOC,
+                            HeadWOLOC: vHeadWOLOC,
+                            ImmersionFood: vImmersionFood,
+                            LigamentsSprain: vLigamentsSprain,
+                            MuscleStrain: vMuscleStrain,
+                            NearDrowning: vNearDrowning,
+                            SoftTissue: vSoftTissue,
+                            SunBurn: vSunBurn,
+                            Tendonitis: vTendonitis,
+                            OtherInury: vOtherInury,
+                            Question1: vQ1,
+                            Question2: vQ2,
+                            Question3: vQ3,
+                            Question4: vQ4,
+                            Question5: vQ5,
+                            Question6: vQ6,
+                        },
+            function () {
+                alert("successfully sent incident to php");
+                window.location = "http://localhost:45082/Main.html"
+            });
 }
