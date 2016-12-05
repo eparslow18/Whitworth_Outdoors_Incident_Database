@@ -66,7 +66,7 @@ function setTripType(TripType)
         TripType = "MultiSport";
     }
     else if ($('#OtherTripType').val()) {
-        TripType = "OtherTripType";
+        TripType = $('#OtherTripType').val();
     }
     else {
         TripType = "None Selected";
