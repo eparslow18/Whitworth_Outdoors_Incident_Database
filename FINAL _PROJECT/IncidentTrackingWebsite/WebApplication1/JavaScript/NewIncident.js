@@ -198,8 +198,8 @@ function SubmitButton() {
     var vQ6 = $('#Question6').val();
 
     //post to php
-
-    $.post("file://cs1/CS_Projects/2016_Fall_CS374/WOIncidentTracking/public_html/PHP_Files/New_Entry.php",
+    alert("made it here" + vQ6);
+    $.post("http://cs1/WOIncidentTracking/PHP_Files/New_Incident.php",
                         {
                             TripName: vTripName,
                             TripStartDate: vTripStartDate,
