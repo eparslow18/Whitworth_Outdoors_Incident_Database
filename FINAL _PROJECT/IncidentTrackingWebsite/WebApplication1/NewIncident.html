@@ -9,7 +9,7 @@
     <script type="text/javascript">google.load("jquery", "1.3.2");</script>
     <script type="text/javascript" src="JavaScript/NewIncident.js"></script>
 </head>
-<body style="background-image: url(Images/NewB.jpg); background-repeat: no-repeat; background-position-x: center; background-position-y:unset; font-family:Calibri">
+<body style="background-image: url(Images/NewB.jpg); background-repeat: no-repeat; background-position-x: center; background-position-y:unset; font-family:Calibri ">
     <h1 style="text-align:center; font-size:300%; font-family:Calibri; text-decoration:underline"><br />  DOCUMENT A NEW INCIDENT </h1>
     <form action="http://cs1/WOIncidentTracking/PHP_Files/New_Incident.php" method="post" >
     <!--Home Button------------------------------------------------------------------------------------------------------->
@@ -22,18 +22,18 @@
     <!--TRIP BASIC INFO------------------------------------------------------------------------------------------------------------------------->
     <h2 style="text-align:center; font-size:150%; font-family:Calibri;">Trip Basic Information<br /></h2>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        Trip Name:<textarea id="TripName" cols="50" style="height:15px" maxlength="50" required></textarea>
-        Trip Start Date: <textarea id="TripStartDate" oninvalid="alert('Input Trip Start Date')" cols="50" ; placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea></>
-        Trip End Date: <textarea cols="50" id="TripEndDate" placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea>
-        Trip Academic Year: <textarea cols="50" id="AcademicYear" placeholder="yyyy-yy" style="height:15px" maxlength="7" required></textarea>
+        Trip Name:<br /><textarea id="TripName" name="TripName" cols="50" style="height:15px" maxlength="50" required></textarea><br />
+        Trip Start Date: <br /> <textarea id="TripStartDate" oninvalid="alert('Input Trip Start Date')" cols="50" ; placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea></><br />
+        Trip End Date: <br /><textarea cols="50" id="TripEndDate" placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea><br />
+        Trip Academic Year:<br /> <textarea cols="50" id="AcademicYear" placeholder="yyyy-yy" style="height:15px" maxlength="7" required></textarea><br />
         Trip Semester:
             <label id="Fall" style="font-size:100%"><input type="radio" name="semester" required>Fall</label>
             <label id="January" style="font-size:100%; margin-left:50px"><input type="radio" name="semester">January</label>
             <label id="Spring" style="font-size:100%; margin-left:50px"><input type="radio" name="semester">Spring</label><br /> <br />
-        Head Lead: <textarea id="HeadLead" cols="50" style="height:15px" maxlength="100" required></textarea>
-        Co-Lead: <textarea cols="50" id="CoLead" style="height:15px" maxlength="100" required></textarea>
-        Apprentice: <textarea cols="50" id="Apprentice" style="height:15px" maxlength="100" required></textarea>
-        Additional Leader(s):<textarea cols="50" id="AdditionalLeaders" style="height:15px" maxlength="150" required></textarea>
+        Head Lead:<br /> <textarea id="HeadLead" cols="50" style="height:15px" maxlength="100" required></textarea><br />
+        Co-Lead: <br /><textarea cols="50" id="CoLead" style="height:15px" maxlength="100" required></textarea><br />
+        Apprentice: <br /><textarea cols="50" id="Apprentice" style="height:15px" maxlength="100" required></textarea><br />
+        Additional Leader(s):<br /><textarea cols="50" id="AdditionalLeaders" style="height:15px" maxlength="150" required></textarea><br />
     </div>
 
     <!--TRIP TYPE------RADIO------------------------------------------------------------------------------------------------------------>
@@ -106,23 +106,23 @@
     <!-- INCIDENT BASIC INFO-------------------------------------------------------------------------------------------------------------------->
     <h4 style="text-align:center; font-size:150%; font-family:Calibri;">Incident Basic Information<br /></h4>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        Date of Incident: <textarea id="DateOfIncident" cols="50" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10" required></textarea>
-        Time of Incident: <textarea cols="50" id="TimeOfIncident" placeholder="16:34 -Military Time" style="height:15px" maxlength="10" required></textarea>
-        Person Reporting Incident: <textarea id="PersonReportingIncident" cols="50" style="height:15px" maxlength="100" required></textarea>
-        Person First Reported To: <textarea cols="50" id="PersonReportedTo" style="height:15px" maxlength="100" required></textarea>
-        Description of Incident: (Please be thorough) <textarea cols="50" id="DescriptionOfIncident" style="height:90px;" maxlength="1500" required></textarea>
-        Response Actions Taken: (Please be thorough) <textarea cols="50" style="height:90px;" id="ResponseActionsTaken" maxlength="1500" required></textarea>
+        Date of Incident: <br /> <textarea id="DateOfIncident" cols="50" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10" required></textarea><br />
+        Time of Incident: <br /><textarea cols="50" id="TimeOfIncident" placeholder="16:34 -Military Time" style="height:15px" maxlength="10" required></textarea><br />
+        Person Reporting Incident: <br /><textarea id="PersonReportingIncident" cols="50" style="height:15px" maxlength="100" required></textarea><br />
+        Person First Reported To:<br /> <textarea cols="50" id="PersonReportedTo" style="height:15px" maxlength="100" required></textarea><br />
+        Description of Incident: (Please be thorough) <br /><textarea cols="50" id="DescriptionOfIncident" style="height:90px;" maxlength="1500" required></textarea><br />
+        Response Actions Taken: (Please be thorough) <br /><textarea cols="50" style="height:90px;" id="ResponseActionsTaken" maxlength="1500" required></textarea><br />
     </div>0
 
     <!--Affected Person Information---------------------------------------------------------------------------------------------------->
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Affected Person Personal Information<br /></h3>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        First Name: <textarea cols="50" id="FirstName" style="height:15px" maxlength="50"></textarea>
-        Last Name:  <textarea cols="50" id="LastName" style="height:15px" maxlength="50"></textarea>
-        Date of Birth: <textarea cols="50" id="DOB" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10"></textarea>
-        Address:  <textarea cols="50" style="height:15px" id="Address" maxlength="200"></textarea>
-        Phone:  <textarea cols="50" placeholder="000-111-2222" id="Phone" style="height:15px" maxlength="12"></textarea>
-        Whitworth ID: <textarea cols="50" id="WhitworthID" style="height:15px" maxlength="8"></textarea>
+        First Name:<br /> <textarea cols="50" id="FirstName" style="height:15px" maxlength="50"></textarea><br />
+        Last Name:  <br /><textarea cols="50" id="LastName" style="height:15px" maxlength="50"></textarea><br />
+        Date of Birth:<br /> <textarea cols="50" id="DOB" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10"></textarea><br />
+        Address:<br />  <textarea cols="50" style="height:15px" id="Address" maxlength="200"></textarea><br />
+        Phone: <br /> <textarea cols="50" placeholder="000-111-2222" id="Phone" style="height:15px" maxlength="12"></textarea><br />
+        Whitworth ID: <br /><textarea cols="50" id="WhitworthID" style="height:15px" maxlength="8"></textarea><br />
     </div>
 
     <!--Type of Incident------------------------------------------------------------------------------------------------------------->
