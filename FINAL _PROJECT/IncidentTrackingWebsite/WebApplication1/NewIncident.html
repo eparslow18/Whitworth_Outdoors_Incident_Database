@@ -23,41 +23,41 @@
     <h2 style="text-align:center; font-size:150%; font-family:Calibri;">Trip Basic Information<br /></h2>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         Trip Name:<br /><textarea id="TripName" name="TripName" cols="50" style="height:15px" maxlength="50" required></textarea><br />
-        Trip Start Date: <br /> <textarea id="TripStartDate" oninvalid="alert('Input Trip Start Date')" cols="50" ; placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea></><br />
-        Trip End Date: <br /><textarea cols="50" id="TripEndDate" placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea><br />
-        Trip Academic Year:<br /> <textarea cols="50" id="AcademicYear" placeholder="yyyy-yy" style="height:15px" maxlength="7" required></textarea><br />
+        Trip Start Date: <br /> <textarea id="TripStartDate" name="TripStartDate" oninvalid="alert('Input Trip Start Date')" cols="50" ; placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea></><br />
+        Trip End Date: <br /><textarea cols="50" id="TripEndDate" name="TripEndDate" placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea><br />
+        Trip Academic Year:<br /> <textarea cols="50" id="AcademicYear" name="AcademicYear" placeholder="yyyy-yy" style="height:15px" maxlength="7" required></textarea><br />
         Trip Semester:
-            <label id="Fall" style="font-size:100%"><input type="radio" name="semester" required>Fall</label>
-            <label id="January" style="font-size:100%; margin-left:50px"><input type="radio" name="semester">January</label>
-            <label id="Spring" style="font-size:100%; margin-left:50px"><input type="radio" name="semester">Spring</label><br /> <br />
-        Head Lead:<br /> <textarea id="HeadLead" cols="50" style="height:15px" maxlength="100" required></textarea><br />
-        Co-Lead: <br /><textarea cols="50" id="CoLead" style="height:15px" maxlength="100" required></textarea><br />
-        Apprentice: <br /><textarea cols="50" id="Apprentice" style="height:15px" maxlength="100" required></textarea><br />
-        Additional Leader(s):<br /><textarea cols="50" id="AdditionalLeaders" style="height:15px" maxlength="150" required></textarea><br />
+            <label  style="font-size:100%"><input id="Fall"  type="radio" name="semester" value="Fall" required>Fall</label>
+            <label  style="font-size:100%; margin-left:50px"><input type="radio" value="January" name="semester">January</label>
+            <label  style="font-size:100%; margin-left:50px"><input type="radio" name="semester" value="Spring">Spring</label><br /> <br />
+        Head Lead:<br /> <textarea id="HeadLead" cols="50" style="height:15px" name="HeadLead" maxlength="100" required></textarea><br />
+        Co-Lead: <br /><textarea cols="50" id="CoLead" name="CoLead" style="height:15px" maxlength="100" required></textarea><br />
+        Apprentice: <br /><textarea cols="50" id="Apprentice" name="Apprentice" style="height:15px" maxlength="100" required></textarea><br />
+        Additional Leader(s):<br /><textarea cols="50" id="AdditionalLeaders" name="AdditionalLeaders" style="height:15px" maxlength="150" required></textarea><br />
     </div>
 
     <!--TRIP TYPE------RADIO------------------------------------------------------------------------------------------------------------>
     <h2 style="text-align:center; font-size:150%; font-family:Calibri;">Trip Type<br /></h2>
     <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         <p id="p">
-            <label id="DayHike" style="font-size:100%"><input id="DayHike" type="radio" name="TripType" value="value">Day Hike</label><br />
-            <label id="Backpacking" style="font-size:100%"><input id="Backpacking" type="radio" name="TripType" value="value">Backpacking</label><br />
-            <label id="Climbing" style="font-size:100%;"><input id="Climbing" type="radio" name="TripType" value="value">Climbing</label><br />
+            <label  style="font-size:100%"><input id="DayHike" type="radio" name="TripType" value="DayHike">Day Hike</label><br />
+            <label  style="font-size:100%"><input id="Backpacking" type="radio" name="TripType" value="Backpacking">Backpacking</label><br />
+            <label  style="font-size:100%;"><input id="Climbing" type="radio" name="TripType" value="Climbing">Climbing</label><br />
 
-            <label id="Snowshoeing" style="font-size:100%"><input id="Snowshoeing" type="radio" name="TripType" value="value">Snowshoeing</label><br />
-            <label id="MountainBiking" style="font-size:100%"><input id="MountainBiking" type="radio" name="TripType" value="value">Mountain Biking</label><br />
-            <label id="Mountaineering" style="font-size:100%"><input id="Mountaineering" type="radio" name="TripType" value="value">Mountaineering</label><br />
+            <label  style="font-size:100%"><input id="Snowshoeing" type="radio" name="TripType" value="Snowshoeing">Snowshoeing</label><br />
+            <label  style="font-size:100%"><input id="MountainBiking" type="radio" name="TripType" value="MountainBiking">Mountain Biking</label><br />
+            <label  style="font-size:100%"><input id="Mountaineering" type="radio" name="TripType" value="Mountaineering">Mountaineering</label><br />
 
-            <label id="Camping" style="font-size:100%"><input id="Camping" type="radio" name="TripType" value="value">Camping</label><br />
-            <label id="IceClimbing" style="font-size:100%"><input id="IceClimbing" type="radio" name="TripType" value="value">Ice Climbing</label><br />
-            <label id="Rafting" style="font-size:100%"><input id="Rafting"  type="radio" name="TripType" value="value">Rafting</label><br />
+            <label  style="font-size:100%"><input id="Camping" type="radio" name="TripType" value="Camping">Camping</label><br />
+            <label  style="font-size:100%"><input id="IceClimbing" type="radio" name="TripType" value="IceClimbing">Ice Climbing</label><br />
+            <label  style="font-size:100%"><input id="Rafting"  type="radio" name="TripType" value="Rafting">Rafting</label><br />
 
-            <label id="SkiVan" style="font-size:100%"><input id="SkiVan"  type="radio" name="TripType" value="value">Ski Van</label><br />
-            <label id="SnowboardingSnowshoeing" style="font-size:100%"><input id="SnowboardingSnowshoeing"  type="radio" name="TripType" value="value">Snowboarding/ Skiing</label><br />
-            <label id="SUP" style="font-size:100%"><input id="SUP" type="radio" name="TripType" value="value">SUP</label><br />
+            <label  style="font-size:100%"><input id="SkiVan"  type="radio" name="TripType" value="SkiVan">Ski Van</label><br />
+            <label  style="font-size:100%"><input id="SnowboardingSnowshoeing"  type="radio" name="TripType" value="SnowboardingSnowshoeing">Snowboarding/ Skiing</label><br />
+            <label  style="font-size:100%"><input id="SUP" type="radio" name="TripType" value="SUP">SUP</label><br />
 
-            <label id="MultiSport" style="font-size:100%"><input id="MultiSport"  type="radio" name="TripType" value="value">Multi-Sport</label><br />
-            <label id="OtherTripType" style="font-size:100%"><input id="OtherTripType" type="radio" name="TripType" value="value"><textarea id="OtherTripType" name = "othertriptype" cols="50" placeholder="Other" style="height:15px; font-family:Calibri" maxlength="100"></textarea></label><br />
+            <label id="MultiSport" style="font-size:100%"><input id="MultiSport"  type="radio" name="TripType" value="MultiSport">Multi-Sport</label><br />
+            <label id="OtherTripType" style="font-size:100%"><input id="Other" type="radio" name="TripType" value="OtherTripType"><textarea id="OtherTripType" name = "othertriptype" cols="50" placeholder="Other" style="height:15px; font-family:Calibri" maxlength="100"></textarea></label><br />
         </p>
     </div>
 
@@ -65,79 +65,77 @@
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Type Of Enviornment<br /></h3>
     <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         <p id="p">
-            <label id="Desert" style="font-size:100%"><input id="Desert" type="checkbox" name="desert" value="value">Desert</label><br />
-            <label id="Cliff" style="font-size:100%;"><input id="Cliff"  type="checkbox" name="cliff" value="value">Cliff</label><br />
-            <label id="Cold" style="font-size:100%"><input  id="Cold" type="checkbox" name="Cold" value="value">Cold</label><br />
+            <label  style="font-size:100%"><input id="Desert" type="checkbox" name="Desert" >Desert</label><br />
+            <label  style="font-size:100%;"><input id="Cliff"  type="checkbox" name="Cliff">Cliff</label><br />
+            <label  style="font-size:100%"><input  id="Cold" type="checkbox" name="Cold" >Cold</label><br />
 
-            <label id="Forest" style="font-size:100%"><input id="Forest" type="checkbox" name="forest" value="value">Forest</label><br />
-            <label id="Glacier" style="font-size:100%"><input id="Glacier"  type="checkbox" name="glacier" value="value">Glacier</label><br />
-            <label id="Lake" style="font-size:100%"><input id="Lake"  type="checkbox" name="Lake" value="value">Lake</label><br />
+            <label  style="font-size:100%"><input id="Forest" type="checkbox" name="Forest" >Forest</label><br />
+            <label  style="font-size:100%"><input id="Glacier"  type="checkbox" name="Glacier">Glacier</label><br />
+            <label  style="font-size:100%"><input id="Lake"  type="checkbox" name="Lake" >Lake</label><br />
 
-            <label id="Mountain" style="font-size:100%"><input id="Mountain" type="checkbox" name="Mountain" value="value">Mountain</label><br />
-            <label id="Ocean" style="font-size:100%"><input id="Ocean"  type="checkbox" name="ocean" value="value">Ocean</label><br />
-            <label id="River" style="font-size:100%"><input id="River" type="checkbox" name="river" value="value">River</label><br />
+            <label  style="font-size:100%"><input id="Mountain" type="checkbox" name="Mountain" >Mountain</label><br />
+            <label  style="font-size:100%"><input id="Ocean"  type="checkbox" name="Ocean" >Ocean</label><br />
+            <label  style="font-size:100%"><input id="River" type="checkbox" name="River" >River</label><br />
 
-            <label id="SnowIce" style="font-size:100%"><input id="SnowIce" type="checkbox" name="snowice" value="value">Snow/ Ice</label><br />
+            <label id="SnowIce" style="font-size:100%"><input id="SnowIce" type="checkbox" name="SnowIce" >Snow/ Ice</label><br />
         </p>
-        <textarea id="OtherEnviornment" name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;" maxlength="100"></textarea>
+        <textarea id="OtherEnviornment" name="Other" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;" maxlength="100"></textarea>
     </div>
 
     <!--SURFACE CONDITION------------------------------------------------------------------------------------------------------>
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Surface Condition<br /></h3>
     <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         <p id="p">
-            <label id="Dry" style="font-size:100%"><input id="Dry"  type="checkbox" name="dry" value="value">Dry</label><br />
-            <label id="Flat" style="font-size:100%"><input id="Flat"  type="checkbox" name="flat" value="value">Flat</label><br />
-            <label id="Ice" style="font-size:100%"><input id="Ice" type="checkbox" name="ice" value="value">Ice</label><br />
+            <label  style="font-size:100%"><input id="Dry"  type="checkbox" name="Dry">Dry</label><br />
+            <label  style="font-size:100%"><input id="Flat"  type="checkbox" name="Flat" >Flat</label><br />
+            <label  style="font-size:100%"><input id="Ice" type="checkbox" name="Ice" >Ice</label><br />
 
-            <label id="Rock" style="font-size:100%"><input id="Rock" type="checkbox" name="rock" value="value">Rock</label><br />
-            <label id="Sloped" style="font-size:100%"><input id="Sloped" type="checkbox" name="sloped" value="value">Sloped</label><br />
-            <label id="Snow" style="font-size:100%"><inputl id="Snow" type="checkbox" name="Snow" value="value">Snow</label><br />
+            <label  style="font-size:100%"><input id="Rock" type="checkbox" name="Rock" >Rock</label><br />
+            <label  style="font-size:100%"><input id="Sloped" type="checkbox" name="Sloped" >Sloped</label><br />
+            <label  style="font-size:100%"><inputl id="Snow" type="checkbox" name="Snow" >Snow</label><br />
 
-            <label id="Trail" style="font-size:100%"><input id="Trail" type="checkbox" name="trail" value="value">Trail</label><br />
-            <label id="Uneven" style="font-size:100%"><input id="Uneven" type="checkbox" name="unevn" value="value">Uneven</label><br />
-            <label id="Wet" style="font-size:100%"><input id="Wet" type="checkbox" name="wet" value="value">Wet</label><br />
-
-            <label id="SnowAndIce" font-size:100%"><input id="SnowAndIce" type="checkbox" name="snowice" value="value">Snow/ Ice</label><br />
+            <label  style="font-size:100%"><input id="Trail" type="checkbox" name="Trail" >Trail</label><br />
+            <label  style="font-size:100%"><input id="Uneven" type="checkbox" name="Unevn" >Uneven</label><br />
+            <label  style="font-size:100%"><input id="Wet" type="checkbox" name="Wet" >Wet</label><br />
         </p>
-        <textarea id="OtherSurfaceCondition" name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;" maxlength="100"></textarea>
+        <textarea id="OtherSurfaceCondition" name="Other" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;" maxlength="100"></textarea>
     </div>
 
     <!-- INCIDENT BASIC INFO-------------------------------------------------------------------------------------------------------------------->
     <h4 style="text-align:center; font-size:150%; font-family:Calibri;">Incident Basic Information<br /></h4>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        Date of Incident: <br /> <textarea id="DateOfIncident" cols="50" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10" required></textarea><br />
-        Time of Incident: <br /><textarea cols="50" id="TimeOfIncident" placeholder="16:34 -Military Time" style="height:15px" maxlength="10" required></textarea><br />
-        Person Reporting Incident: <br /><textarea id="PersonReportingIncident" cols="50" style="height:15px" maxlength="100" required></textarea><br />
-        Person First Reported To:<br /> <textarea cols="50" id="PersonReportedTo" style="height:15px" maxlength="100" required></textarea><br />
-        Description of Incident: (Please be thorough) <br /><textarea cols="50" id="DescriptionOfIncident" style="height:90px;" maxlength="1500" required></textarea><br />
-        Response Actions Taken: (Please be thorough) <br /><textarea cols="50" style="height:90px;" id="ResponseActionsTaken" maxlength="1500" required></textarea><br />
-    </div>0
+        Date of Incident: <br /> <textarea id="DateOfIncident" name="DateOfIncident" cols="50" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10" required></textarea><br />
+        Time of Incident: <br /><textarea cols="50" id="TimeOfIncident" name="TimeOfIncident" placeholder="16:34 -Military Time" style="height:15px" maxlength="10" required></textarea><br />
+        Person Reporting Incident: <br /><textarea id="PersonReportingIncident" name="PersonReportingIncident" cols="50" style="height:15px" maxlength="100" required></textarea><br />
+        Person First Reported To:<br /> <textarea cols="50" id="PersonFirstReportedTo" name="PersonFirstReportedTo" style="height:15px" maxlength="100" required></textarea><br />
+        Description of Incident: (Please be thorough) <br /><textarea cols="50" id="DescriptionOfIncident" name="DescriptionOfIncident" style="height:90px;" maxlength="1500" required></textarea><br />
+        Response Actions Taken: (Please be thorough) <br /><textarea cols="50" style="height:90px;" id="ResponseActionsTaken" name="ResponseActionsTaken" maxlength="1500" required></textarea><br />
+    </div>
 
     <!--Affected Person Information---------------------------------------------------------------------------------------------------->
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Affected Person Personal Information<br /></h3>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        First Name:<br /> <textarea cols="50" id="FirstName" style="height:15px" maxlength="50"></textarea><br />
-        Last Name:  <br /><textarea cols="50" id="LastName" style="height:15px" maxlength="50"></textarea><br />
-        Date of Birth:<br /> <textarea cols="50" id="DOB" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10"></textarea><br />
-        Address:<br />  <textarea cols="50" style="height:15px" id="Address" maxlength="200"></textarea><br />
-        Phone: <br /> <textarea cols="50" placeholder="000-111-2222" id="Phone" style="height:15px" maxlength="12"></textarea><br />
-        Whitworth ID: <br /><textarea cols="50" id="WhitworthID" style="height:15px" maxlength="8"></textarea><br />
+        First Name:<br /> <textarea cols="50" id="FirstName" name="FirstName" style="height:15px" maxlength="50"></textarea><br />
+        Last Name:  <br /><textarea cols="50" id="LastName" name="LastName" style="height:15px" maxlength="50"></textarea><br />
+        <!--Date of Birth:<br /> <textarea cols="50" id="DOB" name="" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10"></textarea><br />-->
+        Address:<br />  <textarea cols="50" style="height:15px" id="Address" name="Address" maxlength="200"></textarea><br />
+        Phone: <br /> <textarea cols="50" placeholder="000-111-2222" id="Phone" name="Phone" style="height:15px" maxlength="12"></textarea><br />
+        Whitworth ID: <br /><textarea cols="50" id="WhitworthID" style="height:15px" name="WhitworthID" maxlength="8"></textarea><br />
     </div>
 
     <!--Type of Incident------------------------------------------------------------------------------------------------------------->
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Type of Incident<br /></h3>
     <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         <p id="p">
-            <label style="font-size:100%"><input id="Death" type="checkbox" name="death" value="value">Death</label><br />
-            <label style="font-size:100%"><input id="Illness" type="checkbox" name="illness" value="value">Illness</label><br />
-            <label style="font-size:100%"><input id="Injury" type="checkbox" name="Injury" value="value">Injury</label><br />
+            <label style="font-size:100%"><input id="Death" type="checkbox" name="Death" >Death</label><br />
+            <label style="font-size:100%"><input id="Illness" type="checkbox" name="Illness" >Illness</label><br />
+            <label style="font-size:100%"><input id="Injury" type="checkbox" name="Injury" >Injury</label><br />
 
-            <label style="font-size:100%"><input id="MotivationBehavioral" type="checkbox" name="motivation" value="value">Motivation/ Behavioral</label><br />
-            <label style="font-size:100%"><input type="checkbox" id="NearMiss" name="Nearmiss" value="value">Near Miss</label><br />
-            <label style="font-size:100%"><input type="checkbox" id="Van" name="Van" value="value">Van</label><br />
+            <label style="font-size:100%"><input id="MotivationBehavioral" type="checkbox" name="MotivationBehavioral" >Motivation/ Behavioral</label><br />
+            <label style="font-size:100%"><input type="checkbox" id="NearMiss" name="NearMiss" >Near Miss</label><br />
+            <label style="font-size:100%"><input type="checkbox" id="Van" name="Van" >Van</label><br />
 
-            <label style="font-size:100%"><input type="checkbox" id="LostPerson" name="lostPerson" value="value">Lost Person</label><br />
+            <label style="font-size:100%"><input type="checkbox" id="LostPerson" name="LostPerson" value="value">Lost Person</label><br />
         </p>
         <textarea name"othersurface" cols="50" placeholder="Other" id="OtherTypeOfIncident" style="height:15px; font-family:Calibri;"></textarea>
     </div>
@@ -146,14 +144,14 @@
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Severity of Incident<br /></h3>
     <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         <p id="p">
-            <label id="Disabling" style="font-size:100%"><input id="Disabling"  type="checkbox" name="disabling" value="value">Disabling</label><br />
-            <label id="Fatal" style="font-size:100%"><input id="Fatal" type="checkbox" name="Fatal" value="value">Fatal</label><br />
-            <label id="Fire" style="font-size:100%"><input id="Fire" type="checkbox" name="Fire" value="value">Fire</label><br />
+            <label  style="font-size:100%"><input id="Disabling"  type="checkbox" name="Disabling">Disabling</label><br />
+            <label  style="font-size:100%"><input id="Fatal" type="checkbox" name="Fatal" >Fatal</label><br />
+            <label  style="font-size:100%"><input id="Fire" type="checkbox" name="Fire" >Fire</label><br />
 
-            <label id="FirstAidOnly" style="font-size:100%"><input id="FirstAidOnly"  type="checkbox" name="firstaid" value="value">First Aid Only</label><br />
-            <label id="MedicalTreatment" style="font-size:100%"><input id="MedicalTreatment" type="checkbox" name="medicaltreatment" value="value">Medical Treatment</label><br />
-            <label id="NoInjury" style="font-size:100%"><input id="NoInjury"  type="checkbox" name="noInjury" value="value">No Injury</label><br />
-            <label id="PropertyDamage" style="font-size:100%"><input id="PropertyDamage"  type="checkbox" name="propertyDamage" value="value">Property Damage</label><br />
+            <label  style="font-size:100%"><input id="FirstAidOnly"  type="checkbox" name="FirstAidOnly" >First Aid Only</label><br />
+            <label  style="font-size:100%"><input id="MedicalTreatment" type="checkbox" name="MedicalTreatment" >Medical Treatment</label><br />
+            <label  style="font-size:100%"><input id="NoInjury"  type="checkbox" name="NoInjury" >No Injury</label><br />
+            <label  style="font-size:100%"><input id="PropertyDamage"  type="checkbox" name="PropertyDamage" >Property Damage</label><br />
         </p>
         <textarea id="OtherSeverity" name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea>
     </div>
@@ -162,31 +160,31 @@
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Type of Illness<br /></h3>
     <div style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         <p id="p">
-            <label id="AbdominalPain" style="font-size:100%"><input id="AbdominalPain"  type="checkbox" name="abdominal" value="value">Abdominal Pain</label><br />
-            <label id="AllergicReaction" style="font-size:100%"><input id="AllergicReaction" type="checkbox" name="allergicReaction" value="value">Allergic Reaction</label><br />
-            <label id="AltitudeSickness" style="font-size:100%"><input id="AltitudeSickness" type="checkbox" name="altitudeSickness" value="value">Altitude Sickeness</label><br />
+            <label  style="font-size:100%"><input id="AbdominalPain"  type="checkbox" name="AbdominalPain" >Abdominal Pain</label><br />
+            <label  style="font-size:100%"><input id="AllergicReaction" type="checkbox" name="AllergicReaction" >Allergic Reaction</label><br />
+            <label  style="font-size:100%"><input id="AltitudeSickness" type="checkbox" name="AltitudeSickness" >Altitude Sickeness</label><br />
 
-            <label style="font-size:100%"><input id="ChestPainCardiac" type="checkbox" name="chestPain" value="value">Chest Pain/ Cardiac Condition</label><br />
-            <label id="Dehydration" style="font-size:100%"><input id="Dehydration"  type="checkbox" name="dehydration" value="value">Dehydration</label><br />
-            <label id="Diarrhea" style="font-size:100%"><input id="Diarrhea" type="checkbox" name="diarrhea" value="value">Diarrhea</label><br />
+            <label style="font-size:100%"><input id="ChestPainCardiac" type="checkbox" name="ChestPain" >Chest Pain/ Cardiac Condition</label><br />
+            <label style="font-size:100%"><input id="Dehydration"  type="checkbox" name="Dehydration" >Dehydration</label><br />
+            <label style="font-size:100%"><input id="Diarrhea" type="checkbox" name="Diarrhea" >Diarrhea</label><br />
 
-            <label id="EarInfection" style="font-size:100%"><input id="EarInfection" type="checkbox" name="earInfection" value="value">Ear Infection</label><br />
-            <label id="EyeInfection" style="font-size:100%"><input id="EyeInfection" type="checkbox" name="eyeInfection" value="value">Eye Infection</label><br />
-            <label id="FluCold" style="font-size:100%"><input id="FluCold" type="checkbox" name="fluCold" value="value">Flu/ Cold</label><br />
+            <label  style="font-size:100%"><input id="EarInfection" type="checkbox" name="EarInfection" >Ear Infection</label><br />
+            <label  style="font-size:100%"><input id="EyeInfection" type="checkbox" name="EyeInfection" >Eye Infection</label><br />
+            <label  style="font-size:100%"><input id="FluOrCold" type="checkbox" name="FluOrCold" >Flu/ Cold</label><br />
 
-            <label id="FoodIllness" style="font-size:100%"><input id="FoodIllness"  type="checkbox" name="foodSickness" value="value">Food Related Illness</label><br />
-            <label id="HeatIllness" style="font-size:100%"><input id="HeatIllness" type="checkbox" name="heatIllness" value="value">Heat Illness</label><br />
-            <label id="Hypothermia" style="font-size:100%"><input id="Hypothermia" type="checkbox" name="hypothermia" value="value">Hypothermia</label><br />
+            <label  style="font-size:100%"><input id="FoodRelatedIllness"  type="checkbox" name="FoodRelatedIllness" >Food Related Illness</label><br />
+            <label  style="font-size:100%"><input id="HeatIllness" type="checkbox" name="HeatIllness" >Heat Illness</label><br />
+            <label  style="font-size:100%"><input id="Hypothermia" type="checkbox" name="Hypothermia" >Hypothermia</label><br />
 
-            <label id="NauseaVomitting" style="font-size:100%"><input id="NauseaVomitting" type="checkbox" name="nauseaVomitting" value="value">Nausea/ Vomitting</label><br />
-            <label id="Fever" style="font-size:100%"><input id="Fever" type="checkbox" name="fever" value="value">Fever Illness</label><br />
-            <label id="SkinInfection" style="font-size:100%"><input id="SkinInfection" type="checkbox" name="skinInfection" value="value">Skin Infection</label><br />
+            <label  style="font-size:100%"><input id="NauseaOrVomitting" type="checkbox" name="NauseaOrVomitting" >Nausea/ Vomitting</label><br />
+            <label  style="font-size:100%"><input id="FeverIllness" type="checkbox" name="FeverIllness" >Fever Illness</label><br />
+            <label  style="font-size:100%"><input id="SkinInfection" type="checkbox" name="SkinInfection" >Skin Infection</label><br />
 
-            <label id="UpperRespiratory" style="font-size:100%"><input id="UpperRespiratory" type="checkbox" name="upperRespirtory" value="value">Upper Respiratory Illness</label><br />
-            <label id="UrinaryTract" style="font-size:100%"><input id="UrinaryTract" type="checkbox" name="urinarytract" value="value">Urinary Tract Infecion</label><br />
-            <label id="Asthma" style="font-size:100%"><input id="Asthma" type="checkbox" name="asthma" value="value">Asthma</label><br />
+            <label  style="font-size:100%"><input id="UpperRespiratoryIllness" type="checkbox" name="upperRespirtoryIllness" >Upper Respiratory Illness</label><br />
+            <label  style="font-size:100%"><input id="UrinaryTractInfection" type="checkbox" name="UrinaryTractInfection" >Urinary Tract Infecion</label><br />
+            <label  style="font-size:100%"><input id="Asthma" type="checkbox" name="asthma">Asthma</label><br />
         </p>
-        <textarea id="OtherIllness" name"othersurface" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea>
+        <textarea id="Other" name="Other" cols="50" placeholder="Other" style="height:15px; font-family:Calibri;"></textarea>
     </div>
 
 
@@ -222,11 +220,11 @@
     <!--WHITWORTH INCIDENT QUESTIONS------------------------------------------------------------------------------------------------------------------------->
     <h3 style="text-align:center; font-size:150%; font-family:Calibri;">Whitworth Incident Questions<br /></h3>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        Were person’s actions at time of injury/incident for the purpose of Whitworth business? If NO, please explain: <textarea id="Question1" cols="50" style="height:40px; width:100%" maxlength="800" required></textarea>
-        Was any person not employed by Whitworth to blame for this injury/incident? If YES, please provide name and address of such person below. <textarea id="Question2" cols="50" style="height:40px; width:100%" maxlength="800" required></textarea>
-        Are you aware of any previous pain or disability in the area of the present injury? If YES, please explain: <textarea cols="50" id="Question3" style="height:40px; width:100%" maxlength="800" required></textarea>
-        Are you aware of any pre-existing injury or disability of the worker prior to injury? If YES, please explain: <textarea cols="50" id="Question4" style="height:40px; width:100%" maxlength="800" required></textarea>
-        What was the basic cause (and contributory cause(s) if any) Please explain fully any unsafe act, condition or personal factor: <textarea cols="50" id="Question5" style="height:40px; width:100%" maxlength="800" required></textarea>
+        Were person’s actions at time of injury/incident for the purpose of Whitworth business? If NO, please explain: <textarea id="Question1" cols="50" style="height:40px; width:100%" maxlength="800" name="Question1" required></textarea>
+        Was any person not employed by Whitworth to blame for this injury/incident? If YES, please provide name and address of such person below. <textarea id="Question2" name="Question2" cols="50" style="height:40px; width:100%" maxlength="800" required></textarea>
+        Are you aware of any previous pain or disability in the area of the present injury? If YES, please explain: <textarea cols="50" id="Question3" name="Question3" style="height:40px; width:100%" maxlength="800" required></textarea>
+        Are you aware of any pre-existing injury or disability of the worker prior to injury? If YES, please explain: <textarea cols="50" id="Question4" name="Question4" style="height:40px; width:100%" maxlength="800" required></textarea>
+        What was the basic cause (and contributory cause(s) if any) Please explain fully any unsafe act, condition or personal factor: <textarea cols="50" id="Question5" name="Question5" style="height:40px; width:100%" maxlength="800" required></textarea>
         Name and occupations of persons who investigated accident: <textarea id="Question6" cols="50" style="height:40px; width:100%" maxlength="800" required></textarea>
     </div>
 
