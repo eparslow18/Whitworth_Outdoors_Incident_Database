@@ -11,11 +11,14 @@
             overflow: hidden;
             background-color: transparent;
             text-align: center;
+            display: inline-block;
+            list-style-type: none;
         }
 
         li {
             float: right; /*use float to get the menu options to slide next to eachother*/
         }
+        
 
             li a { /*creating menu*/
                 display: block;

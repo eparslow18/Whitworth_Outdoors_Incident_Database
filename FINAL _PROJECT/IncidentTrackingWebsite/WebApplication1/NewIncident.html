@@ -15,7 +15,7 @@
     <!--Home Button------------------------------------------------------------------------------------------------------->
     <ul id="nav" style="align-self:center; font-size:115%">
         <!-- naming menu options and displaying in bar at bottom info------------------------------------------------------------------------------>
-        <li><a href="Main.html">Return to Main</a></li>
+        <li><a href="Main.html" style="color:aliceblue; text" >Return to Main</a></li>
     </ul>
     <br />
 
@@ -23,8 +23,8 @@
     <h2 style="text-align:center; font-size:150%; font-family:Calibri;">Trip Basic Information<br /></h2>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
         Trip Name:<br /><textarea id="TripName" name="TripName" cols="50" style="height:15px" maxlength="50" required></textarea><br />
-        Trip Start Date: <br /> <textarea id="TripStartDate" name="TripStartDate" oninvalid="alert('Input Trip Start Date')" cols="50" ; placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea></><br />
-        Trip End Date: <br /><textarea cols="50" id="TripEndDate" name="TripEndDate" placeholder="mm/dd/yyyy" style="height:15px " maxlength="10" required></textarea><br />
+        Trip Start Date:  <br /> <input id="TripStartDate" name="TripStartDate" type="date"; style="width:368px"  /><br />
+        Trip End Date: <br /> <input id="TripEndDate" name="TripEndDate" type="date" ; style="width:368px"  /><br />
         Trip Academic Year:<br /> <textarea cols="50" id="AcademicYear" name="AcademicYear" placeholder="yyyy-yy" style="height:15px" maxlength="7" required></textarea><br />
         Trip Semester:
             <label  style="font-size:100%"><input id="Fall"  type="radio" name="semester" value="Fall" required>Fall</label>
@@ -92,7 +92,7 @@
 
             <label  style="font-size:100%"><input id="Rock" type="checkbox" name="Rock" >Rock</label><br />
             <label  style="font-size:100%"><input id="Sloped" type="checkbox" name="Sloped" >Sloped</label><br />
-            <label  style="font-size:100%"><inputl id="Snow" type="checkbox" name="Snow" >Snow</label><br />
+            <label  style="font-size:100%"><input id="Snow" type="checkbox" name="Snow" >Snow</label><br />
 
             <label  style="font-size:100%"><input id="Trail" type="checkbox" name="Trail" >Trail</label><br />
             <label  style="font-size:100%"><input id="Uneven" type="checkbox" name="Unevn" >Uneven</label><br />
@@ -104,8 +104,8 @@
     <!-- INCIDENT BASIC INFO-------------------------------------------------------------------------------------------------------------------->
     <h4 style="text-align:center; font-size:150%; font-family:Calibri;">Incident Basic Information<br /></h4>
     <div id="p" style="text-align:left; font-size:100%; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-        Date of Incident: <br /> <textarea id="DateOfIncident" name="DateOfIncident" cols="50" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10" required></textarea><br />
-        Time of Incident: <br /><textarea cols="50" id="TimeOfIncident" name="TimeOfIncident" placeholder="16:34 -Military Time" style="height:15px" maxlength="10" required></textarea><br />
+        Date of Incident: <br /> <input id="DateOfIncident" name="DateOfIncident" type="date" ; style="width:368px" /><br />
+        Time of Incident: <br /><textarea cols="50" id="TimeOfIncident" name="TimeOfIncident" placeholder="16:34 -Military Time" style="height:15px" maxlength="5" required></textarea><br />
         Person Reporting Incident: <br /><textarea id="PersonReportingIncident" name="PersonReportingIncident" cols="50" style="height:15px" maxlength="100" required></textarea><br />
         Person First Reported To:<br /> <textarea cols="50" id="PersonFirstReportedTo" name="PersonFirstReportedTo" style="height:15px" maxlength="100" required></textarea><br />
         Description of Incident: (Please be thorough) <br /><textarea cols="50" id="DescriptionOfIncident" name="DescriptionOfIncident" style="height:90px;" maxlength="1500" required></textarea><br />
@@ -120,7 +120,7 @@
         <!--Date of Birth:<br /> <textarea cols="50" id="DOB" name="" placeholder="mm/dd/yyyy" style="height:15px" maxlength="10"></textarea><br />-->
         Address:<br />  <textarea cols="50" style="height:15px" id="Address" name="Address" maxlength="200"></textarea><br />
         Phone: <br /> <textarea cols="50" placeholder="000-111-2222" id="Phone" name="Phone" style="height:15px" maxlength="12"></textarea><br />
-        Whitworth ID: <br /><textarea cols="50" id="WhitworthID" style="height:15px" name="WhitworthID" maxlength="8"></textarea><br />
+        Whitworth ID: <br /><input pattern="[0-9]" cols="50" id="WhitworthID" style="height:15px; width:368px" name="WhitworthID" maxlength="8"><br />
     </div>
 
     <!--Type of Incident------------------------------------------------------------------------------------------------------------->
@@ -233,10 +233,11 @@
     <div id="p" style="text-align:center; font-size:100%; font-family:Calibri; align-content:center; font-weight:600; padding: 10px 20px; border: grey 2px solid; width:800px">
         <label style="font-size:100%"><input type="checkbox" name="submitting" value="value" required>I assert that all of this information is true to my knowledge.</label>
         <br /><br />
-        <button type="submit" onclick="window.location=http://localhost:45082/Main.html" value="Submit">Submit</button>
-    </div>
+        <button type="submit" value="Submit">Submit</button> <!--onclick="location.href = 'http://http://localhost:45082/Main.html'"--> 
+     </div>
 
     <br /><br /><br /><br />    
     </form>
+    <!--<a href="Main.html"></a>-->
 </body>
 </html>
