@@ -94,6 +94,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\new.jpg" />
     <Content Include="Images\EditB.jpg" />
     <Content Include="Images\MainPage.jpg" />
     <Content Include="Images\NewB.jpg" />
