@@ -17,59 +17,63 @@
         <!--SEARCH CRITERIA------------------------------------------------------------------------------------------------------------------------->
         <h2 style="text-align:center; font-size:150%; font-family:Calibri;">Select checkboxs to search for incidents of that type<br /></h2>
 
-
-
         <div id="p" style="text-align:left; font-size:100%; font-weight:500; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
-
-
-            <label style="font-size:100%; font-weight:600"><input type="radio" name="search" value="value">Academic Year</label><br /><br />
-            <textarea cols="50" id="AcademicYear" placeholder="yyyy-yy" style="height:15px" maxlength="7"></textarea> <br />
-
-            <label style="font-size:100%; font-weight:600;"><input type="radio" name="search" value="value">Type of Trip</label><br /><br />
-            <p>
-                <label id="DayHike" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="dayhike" value="value">Day Hike</label><br />
-                <label id="Backpacking" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="backpacking" value="value">Backpacking</label><br />
-                <label id="Climbing" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="climbing" value="value">Climbing</label><br />
-                <label id="Snowshoeing" style="font-size:100%;margin-left:2cm; font-weight:400"><input type="checkbox" name="snowshoeing" value="value">Snowshoeing</label><br />
-                <label id="MountainBiking" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="mountainbiking" value="value">Mountain Biking</label><br />
-                <label id="Mountaineering" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="mountaineering" value="value">Mountaineering</label><br />
-                <label id="Camping" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="camping" value="value">Camping</label><br />
-                <label id="IceClimbing" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="iceclimbing" value="value">Ice Climbing</label><br />
-                <label id="Rafting" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="rafting" value="value">Rafting</label><br />
-                <label id="SkiVan" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="skivan" value="value">Ski Van</label><br />
-                <label id="SnowboardingSnowshoeing" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="snowboarding" value="value">Snowboarding/ Skiing</label><br />
-                <label id="SUP" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="sup" value="value">SUP</label><br />
-                <label id="MultiSport" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="multisport" value="value">Multi-Sport</label><br />
-            </p>
-
-            <label style="font-size:100%; font-weight:600"><input type="radio" name="search" value="value">Type of Incident</label><br /><br />
-            <p>
-                <label style="font-size:100%; margin-left:2cm; font-weight:400"><input id="Death" type="checkbox" name="death" value="value">Death</label><br />
-                <label style="font-size:100%; margin-left:2cm; font-weight:400"><input id="Illness" type="checkbox" name="illness" value="value">Illness</label><br />
-                <label style="font-size:100%; margin-left:2cm; font-weight:400"><input id="Injury" type="checkbox" name="Injury" value="value">Injury</label><br />
-                <label style="font-size:100%; margin-left:2cm; font-weight:400"><input id="MotivationBehavioral" type="checkbox" name="motivation" value="value">Motivation/ Behavioral</label><br />
-                <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" id="NearMiss" name="Nearmiss" value="value">Near Miss</label><br />
-                <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" id="Van" name="Van" value="value">Van</label><br />
-                <label style="font-size:100%;margin-left:2cm; font-weight:400"><input type="checkbox" id="LostPerson" name="lostPerson" value="value">Lost Person</label><br />
-            </p>
-
-            <label style="font-size:100%; font-weight:600"><input type="radio" name="search" value="value">Severity of Incident</label><br /><br />
-            <p>
-                <label id="Disabling" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="disabling" value="value">Disabling</label><br />
-                <label id="Fatal" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="Fatal" value="value">Fatal</label><br />
-                <label id="Fire" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="Fire" value="value">Fire</label><br />
-                <label id="FirstAidOnly" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="firstaid" value="value">First Aid Only</label><br />
-                <label id="MedicalTreatment" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="medicaltreatment" value="value">Medical Treatment</label><br />
-                <label id="NoInjury" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="noInjury" value="value">No Injury</label><br />
-                <label id="PropertyDamage" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="propertyDamage" value="value">Property Damage</label><br />
-            </p>
-
-            <br /><br />
-            <button style="text-align:center; font-size:100%; font-family:Calibri; align-content:center; font-weight:600;" type="submit" value="Submit">Submit</button>
-            <!--onclick="location.href = 'http://localhost:45082/Main.html'"-->
+           <br /> <button style="text-align:center; font-size:100%; font-family:Calibri; align-content:center; font-weight:600;" type="submit" value="Submit">Total Number of Incidents </button> <br /><br />
+            <button style="text-align:center; font-size:100%; font-family:Calibri; align-content:center; font-weight:600;" type="submit" value="Submit">Trip Type with Most Incidents </button> <br /><br />
+             <button style="text-align:center; font-size:100%; font-family:Calibri; align-content:center; font-weight:600;" type="submit" value="Submit">Most Common Type Of Incident</button> <br /><br />
         </div>
+        <br /><br /><br />
+            <div id="p" style="text-align:left; font-size:100%; font-weight:500; font-family:Calibri; padding: 10px 20px; border: grey 2px solid; width:800px">
 
-    </form> 
+
+                <label style="font-size:100%; font-weight:600"><input type="radio" name="search" value="value">Academic Year</label><br /><br />
+                <textarea cols="50" id="AcademicYear" placeholder="yyyy-yy" style="height:15px" maxlength="7"></textarea> <br />
+
+                <label style="font-size:100%; font-weight:600;"><input type="radio" name="search" value="value">Type of Trip</label><br /><br />
+                <p>
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="dayhike">Day Hike</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="backpacking">Backpacking</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="climbing">Climbing</label><br />
+                    <label style="font-size:100%;margin-left:2cm; font-weight:400"><input type="checkbox" name="snowshoeing">Snowshoeing</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="mountainbiking">Mountain Biking</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="mountaineering">Mountaineering</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="camping">Camping</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="iceclimbing">Ice Climbing</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="rafting">Rafting</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="skivan">Ski Van</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="snowboarding">Snowboarding/ Skiing</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="sup">SUP</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="multisport">Multi-Sport</label><br />
+                </p>
+
+                <label style="font-size:100%; font-weight:600"><input type="radio" name="search" value="value">Type of Incident</label><br /><br />
+                <p>
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input id="Death" type="checkbox" name="death" value="value">Death</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input id="Illness" type="checkbox" name="illness" value="value">Illness</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input id="Injury" type="checkbox" name="Injury" value="value">Injury</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input id="MotivationBehavioral" type="checkbox" name="motivation" value="value">Motivation/ Behavioral</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" id="NearMiss" name="Nearmiss" value="value">Near Miss</label><br />
+                    <label style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" id="Van" name="Van" value="value">Van</label><br />
+                    <label style="font-size:100%;margin-left:2cm; font-weight:400"><input type="checkbox" id="LostPerson" name="lostPerson" value="value">Lost Person</label><br />
+                </p>
+
+                <label style="font-size:100%; font-weight:600"><input type="radio" name="search" value="value">Severity of Incident</label><br /><br />
+                <p>
+                    <label id="Disabling" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="disabling" value="value">Disabling</label><br />
+                    <label id="Fatal" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="Fatal" value="value">Fatal</label><br />
+                    <label id="Fire" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="Fire" value="value">Fire</label><br />
+                    <label id="FirstAidOnly" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="firstaid" value="value">First Aid Only</label><br />
+                    <label id="MedicalTreatment" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="medicaltreatment" value="value">Medical Treatment</label><br />
+                    <label id="NoInjury" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="noInjury" value="value">No Injury</label><br />
+                    <label id="PropertyDamage" style="font-size:100%; margin-left:2cm; font-weight:400"><input type="checkbox" name="propertyDamage" value="value">Property Damage</label><br />
+                </p>
+
+                <br /><br />
+                <button style="text-align:center; font-size:100%; font-family:Calibri; align-content:center; font-weight:600;" type="submit" value="Submit">Submit</button>
+                <!--onclick="location.href = 'http://localhost:45082/Main.html'"-->
+            </div>
+
+</form> 
         <br />
         <br />
         <br />
